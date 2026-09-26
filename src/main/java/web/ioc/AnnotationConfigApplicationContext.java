@@ -8,6 +8,9 @@ import web.ioc.annotation.Type.Component;
 import web.ioc.annotation.Type.Controller;
 import web.ioc.annotation.Type.RestController;
 import web.ioc.annotation.Type.Service;
+import web.rpc.RpcInvoke;
+import web.rpc.ServiceRegistry;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
@@ -22,6 +25,20 @@ public class AnnotationConfigApplicationContext{
         registerAspect(aspectBeans);   //先实例化切面类
         register(beanList); //实例化：注册到容器中
         injectDependence();  //对有autowired的字段进行依赖注入
+        registerScanForRpc(scan);
+    }
+
+    private void registerScanForRpc(List<Class<?>> scan) {
+        List<Object> entities = new LinkedList<>();
+        for(Class<?> clazz : scan){
+            try {
+                entities.add(clazz.getDeclaredConstructor().newInstance());
+            } catch (NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        ServiceRegistry registry = new ServiceRegistry(entities);
+        RpcInvoke.setBeans(entities);
     }
 
 
