@@ -1,4 +1,4 @@
-package web.ioc.annotation.Type;
+package web.exception.ioc.annotation.Type;
 
 import java.lang.annotation.*;
 
