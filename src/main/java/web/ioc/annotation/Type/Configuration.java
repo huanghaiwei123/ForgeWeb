@@ -1,4 +1,4 @@
-package web.exception.ioc.annotation.Type;
+package web.ioc.annotation.Type;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

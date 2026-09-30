@@ -1,7 +1,7 @@
 package test.controller;
 
 import test.entity.User;
-import web.exception.ioc.annotation.Type.RestController;
+import web.ioc.annotation.Type.RestController;
 import web.mvc.annotation.method.GetMapping;
 import web.mvc.annotation.method.PostMapping;
 import web.mvc.annotation.parameter.PathVariable;
