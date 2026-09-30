@@ -1,0 +1,814 @@
+{
+  "scriptCompleted": true,
+  "contentDigest": "a349f202169d53784ff988eb55f4a922aecbdb8d0be0bbec3fe5bc93f80711d0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".mvn/wrapper/maven-wrapper.properties",
+      "language": "properties",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 4,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "body.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "cp.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "mvnw",
+      "language": "unknown",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mvnw.cmd",
+      "language": "batch",
+      "sizeLines": 189,
+      "fileCategory": "script"
+    },
+    {
+      "path": "pom.xml",
+      "language": "xml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": "server_err.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "server_out.txt",
+      "language": "txt",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "src/main/java/test/MiniSpringboot.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/test/aspect/AspectTest.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/test/controller/HelloController.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/test/entity/User.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ApplicationServer.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/AopProxy.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/PointcutMatcher.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/ProceedingJoinPoint.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/annotation/method/After.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/annotation/method/Around.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/annotation/method/Before.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/annotation/type/Aspect.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/common/Result.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/core/ClassScanner.java",
+      "language": "java",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/exception/GlobalException.java",
+      "language": "java",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+      "language": "java",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/annotation/Fileld/Autowired.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/annotation/Fileld/Scope.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/annotation/Type/Component.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/annotation/Type/Configuration.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/annotation/Type/Controller.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/annotation/Type/RestController.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/annotation/Type/Service.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/exception/NoSuchBeanException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/exception/NoUniqueBeanException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/factory/BeanFactory.java",
+      "language": "java",
+      "sizeLines": 42,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+      "language": "java",
+      "sizeLines": 154,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/pojo/BeanDefinition.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+      "language": "java",
+      "sizeLines": 86,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/registry/SingletonBeanRegistry.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/ArgumentResolver.java",
+      "language": "java",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/Dispatcher.java",
+      "language": "java",
+      "sizeLines": 55,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/HandleExecution.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/HandleMapping.java",
+      "language": "java",
+      "sizeLines": 146,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/MappingResult.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/TypeConverter.java",
+      "language": "java",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/RequestMethod.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/method/DeleteMapping.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/method/GetMapping.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/method/PostMapping.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/method/PutMapping.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/parameter/PathVariable.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/parameter/RequestBody.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/parameter/RequestParam.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/annotation/type/RequestMapping.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/exception/BadRequestException.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/mvc/exception/NotFoundException.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/EntityMetaData.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/SqlGenerate.java",
+      "language": "java",
+      "sizeLines": 379,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/TypeConverter.java",
+      "language": "java",
+      "sizeLines": 37,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/annotation/Column.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/annotation/Id.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/annotation/Table.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/service/EntityQueryWrapper.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/service/EntityUpdateWrapper.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/service/impl/EntityQueryWrapperImpl.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/orm/service/impl/EntityUpdateWrapperImpl.java",
+      "language": "java",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/RpcClient.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/RpcInvoke.java",
+      "language": "java",
+      "sizeLines": 54,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/RpcServer.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/ServiceRegistry.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/cglib/RpcProxy.java",
+      "language": "java",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/exception/RpcUnFoundException.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/handle/MyClientHandle.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/handle/MyServerHandle.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/request/RpcRequest.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/request/codec/RpcRequestDecoder.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/request/codec/RpcRequestEncoder.java",
+      "language": "java",
+      "sizeLines": 36,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/responce/RpcResponce.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/responce/codec/RpcResponceDecode.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/rpc/responce/codec/RpcResponceEncode.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/server/HttpRequestHandler.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/server/HttpServer.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/server/HttpServerInitializer.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/server/WebResponse.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/java/web/ServerTest.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "srv_err.txt",
+      "language": "txt",
+      "sizeLines": 0,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "srv_out.txt",
+      "language": "txt",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    }
+  ],
+  "totalFiles": 91,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "moderate",
+  "failures": [],
+  "stats": {
+    "filesScanned": 91,
+    "byCategory": {
+      "code": 80,
+      "config": 3,
+      "docs": 7,
+      "script": 1
+    },
+    "byLanguage": {
+      "unknown": 2,
+      "properties": 1,
+      "markdown": 2,
+      "json": 1,
+      "txt": 5,
+      "batch": 1,
+      "xml": 1,
+      "java": 78
+    }
+  },
+  "importMap": {
+    ".gitattributes": [],
+    ".mvn/wrapper/maven-wrapper.properties": [],
+    "AGENTS.md": [],
+    "README.md": [],
+    "body.json": [],
+    "cp.txt": [],
+    "mvnw": [],
+    "mvnw.cmd": [],
+    "pom.xml": [],
+    "server_err.txt": [],
+    "server_out.txt": [],
+    "src/main/java/test/MiniSpringboot.java": [
+      "src/main/java/web/ApplicationServer.java"
+    ],
+    "src/main/java/test/aspect/AspectTest.java": [
+      "src/main/java/web/aop/annotation/method/After.java",
+      "src/main/java/web/aop/annotation/method/Before.java",
+      "src/main/java/web/aop/annotation/type/Aspect.java"
+    ],
+    "src/main/java/test/controller/HelloController.java": [
+      "src/main/java/test/entity/User.java",
+      "src/main/java/web/ioc/annotation/Type/RestController.java",
+      "src/main/java/web/mvc/annotation/method/GetMapping.java",
+      "src/main/java/web/mvc/annotation/method/PostMapping.java",
+      "src/main/java/web/mvc/annotation/parameter/PathVariable.java",
+      "src/main/java/web/mvc/annotation/parameter/RequestBody.java",
+      "src/main/java/web/mvc/annotation/parameter/RequestParam.java"
+    ],
+    "src/main/java/test/entity/User.java": [],
+    "src/main/java/web/ApplicationServer.java": [
+      "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+      "src/main/java/web/mvc/Dispatcher.java",
+      "src/main/java/web/mvc/HandleMapping.java",
+      "src/main/java/web/mvc/TypeConverter.java",
+      "src/main/java/web/rpc/RpcInvoke.java",
+      "src/main/java/web/rpc/ServiceRegistry.java",
+      "src/main/java/web/server/HttpServer.java"
+    ],
+    "src/main/java/web/aop/AopProxy.java": [
+      "src/main/java/web/aop/annotation/method/After.java",
+      "src/main/java/web/aop/annotation/method/Around.java",
+      "src/main/java/web/aop/annotation/method/Before.java"
+    ],
+    "src/main/java/web/aop/PointcutMatcher.java": [],
+    "src/main/java/web/aop/ProceedingJoinPoint.java": [],
+    "src/main/java/web/aop/annotation/method/After.java": [],
+    "src/main/java/web/aop/annotation/method/Around.java": [],
+    "src/main/java/web/aop/annotation/method/Before.java": [],
+    "src/main/java/web/aop/annotation/type/Aspect.java": [],
+    "src/main/java/web/common/Result.java": [],
+    "src/main/java/web/core/ClassScanner.java": [],
+    "src/main/java/web/exception/GlobalException.java": [],
+    "src/main/java/web/ioc/AnnotationConfigApplicationContext.java": [
+      "src/main/java/web/core/ClassScanner.java",
+      "src/main/java/web/ioc/annotation/Fileld/Autowired.java",
+      "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+      "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java",
+      "src/main/java/web/rpc/RpcInvoke.java",
+      "src/main/java/web/rpc/ServiceRegistry.java"
+    ],
+    "src/main/java/web/ioc/annotation/Fileld/Autowired.java": [],
+    "src/main/java/web/ioc/annotation/Fileld/Scope.java": [
+      "src/main/java/web/ioc/enumeration/ScopeEnum.java"
+    ],
+    "src/main/java/web/ioc/annotation/Type/Component.java": [],
+    "src/main/java/web/ioc/annotation/Type/Configuration.java": [],
+    "src/main/java/web/ioc/annotation/Type/Controller.java": [],
+    "src/main/java/web/ioc/annotation/Type/RestController.java": [],
+    "src/main/java/web/ioc/annotation/Type/Service.java": [],
+    "src/main/java/web/ioc/enumeration/ScopeEnum.java": [],
+    "src/main/java/web/ioc/exception/NoSuchBeanException.java": [],
+    "src/main/java/web/ioc/exception/NoUniqueBeanException.java": [],
+    "src/main/java/web/ioc/factory/BeanFactory.java": [],
+    "src/main/java/web/ioc/factory/DefaultBeanFactory.java": [
+      "src/main/java/web/aop/AopProxy.java",
+      "src/main/java/web/aop/annotation/type/Aspect.java",
+      "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+      "src/main/java/web/ioc/exception/NoSuchBeanException.java",
+      "src/main/java/web/ioc/exception/NoUniqueBeanException.java",
+      "src/main/java/web/ioc/pojo/BeanDefinition.java",
+      "src/main/java/web/ioc/registry/SingletonBeanRegistry.java"
+    ],
+    "src/main/java/web/ioc/pojo/BeanDefinition.java": [
+      "src/main/java/web/ioc/enumeration/ScopeEnum.java"
+    ],
+    "src/main/java/web/ioc/reader/BeanDefinitionReader.java": [
+      "src/main/java/web/aop/PointcutMatcher.java",
+      "src/main/java/web/aop/annotation/method/After.java",
+      "src/main/java/web/aop/annotation/method/Around.java",
+      "src/main/java/web/aop/annotation/method/Before.java",
+      "src/main/java/web/aop/annotation/type/Aspect.java",
+      "src/main/java/web/ioc/annotation/Fileld/Scope.java",
+      "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+      "src/main/java/web/ioc/pojo/BeanDefinition.java",
+      "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java"
+    ],
+    "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java": [
+      "src/main/java/web/ioc/pojo/BeanDefinition.java"
+    ],
+    "src/main/java/web/ioc/registry/SingletonBeanRegistry.java": [],
+    "src/main/java/web/mvc/ArgumentResolver.java": [
+      "src/main/java/web/mvc/annotation/RequestMethod.java",
+      "src/main/java/web/mvc/annotation/parameter/PathVariable.java",
+      "src/main/java/web/mvc/annotation/parameter/RequestBody.java",
+      "src/main/java/web/mvc/annotation/parameter/RequestParam.java",
+      "src/main/java/web/mvc/exception/BadRequestException.java"
+    ],
+    "src/main/java/web/mvc/Dispatcher.java": [
+      "src/main/java/web/mvc/annotation/RequestMethod.java",
+      "src/main/java/web/mvc/exception/NotFoundException.java"
+    ],
+    "src/main/java/web/mvc/HandleExecution.java": [],
+    "src/main/java/web/mvc/HandleMapping.java": [
+      "src/main/java/web/ioc/annotation/Type/Controller.java",
+      "src/main/java/web/ioc/annotation/Type/RestController.java",
+      "src/main/java/web/mvc/annotation/RequestMethod.java",
+      "src/main/java/web/mvc/annotation/method/DeleteMapping.java",
+      "src/main/java/web/mvc/annotation/method/GetMapping.java",
+      "src/main/java/web/mvc/annotation/method/PostMapping.java",
+      "src/main/java/web/mvc/annotation/method/PutMapping.java",
+      "src/main/java/web/mvc/annotation/type/RequestMapping.java"
+    ],
+    "src/main/java/web/mvc/MappingResult.java": [],
+    "src/main/java/web/mvc/TypeConverter.java": [],
+    "src/main/java/web/mvc/annotation/RequestMethod.java": [],
+    "src/main/java/web/mvc/annotation/method/DeleteMapping.java": [
+      "src/main/java/web/mvc/annotation/RequestMethod.java"
+    ],
+    "src/main/java/web/mvc/annotation/method/GetMapping.java": [
+      "src/main/java/web/mvc/annotation/RequestMethod.java"
+    ],
+    "src/main/java/web/mvc/annotation/method/PostMapping.java": [
+      "src/main/java/web/mvc/annotation/RequestMethod.java"
+    ],
+    "src/main/java/web/mvc/annotation/method/PutMapping.java": [
+      "src/main/java/web/mvc/annotation/RequestMethod.java"
+    ],
+    "src/main/java/web/mvc/annotation/parameter/PathVariable.java": [],
+    "src/main/java/web/mvc/annotation/parameter/RequestBody.java": [],
+    "src/main/java/web/mvc/annotation/parameter/RequestParam.java": [],
+    "src/main/java/web/mvc/annotation/type/RequestMapping.java": [
+      "src/main/java/web/mvc/annotation/RequestMethod.java"
+    ],
+    "src/main/java/web/mvc/exception/BadRequestException.java": [],
+    "src/main/java/web/mvc/exception/NotFoundException.java": [],
+    "src/main/java/web/orm/EntityMetaData.java": [
+      "src/main/java/web/orm/annotation/Column.java",
+      "src/main/java/web/orm/annotation/Id.java",
+      "src/main/java/web/orm/annotation/Table.java"
+    ],
+    "src/main/java/web/orm/SqlGenerate.java": [
+      "src/main/java/web/orm/annotation/Column.java",
+      "src/main/java/web/orm/annotation/Id.java"
+    ],
+    "src/main/java/web/orm/TypeConverter.java": [],
+    "src/main/java/web/orm/annotation/Column.java": [],
+    "src/main/java/web/orm/annotation/Id.java": [],
+    "src/main/java/web/orm/annotation/Table.java": [],
+    "src/main/java/web/orm/service/EntityQueryWrapper.java": [],
+    "src/main/java/web/orm/service/EntityUpdateWrapper.java": [],
+    "src/main/java/web/orm/service/impl/EntityQueryWrapperImpl.java": [
+      "src/main/java/web/orm/EntityMetaData.java",
+      "src/main/java/web/orm/SqlGenerate.java",
+      "src/main/java/web/orm/service/EntityQueryWrapper.java"
+    ],
+    "src/main/java/web/orm/service/impl/EntityUpdateWrapperImpl.java": [
+      "src/main/java/web/orm/EntityMetaData.java",
+      "src/main/java/web/orm/SqlGenerate.java",
+      "src/main/java/web/orm/annotation/Column.java",
+      "src/main/java/web/orm/annotation/Id.java",
+      "src/main/java/web/orm/annotation/Table.java",
+      "src/main/java/web/orm/service/EntityUpdateWrapper.java"
+    ],
+    "src/main/java/web/rpc/RpcClient.java": [
+      "src/main/java/web/rpc/handle/MyClientHandle.java",
+      "src/main/java/web/rpc/request/RpcRequest.java",
+      "src/main/java/web/rpc/request/codec/RpcRequestEncoder.java",
+      "src/main/java/web/rpc/responce/RpcResponce.java",
+      "src/main/java/web/rpc/responce/codec/RpcResponceDecode.java"
+    ],
+    "src/main/java/web/rpc/RpcInvoke.java": [
+      "src/main/java/web/rpc/request/RpcRequest.java",
+      "src/main/java/web/rpc/responce/RpcResponce.java"
+    ],
+    "src/main/java/web/rpc/RpcServer.java": [
+      "src/main/java/web/rpc/handle/MyServerHandle.java",
+      "src/main/java/web/rpc/request/codec/RpcRequestDecoder.java",
+      "src/main/java/web/rpc/responce/codec/RpcResponceEncode.java"
+    ],
+    "src/main/java/web/rpc/ServiceRegistry.java": [],
+    "src/main/java/web/rpc/cglib/RpcProxy.java": [
+      "src/main/java/web/rpc/RpcClient.java",
+      "src/main/java/web/rpc/request/RpcRequest.java",
+      "src/main/java/web/rpc/responce/RpcResponce.java"
+    ],
+    "src/main/java/web/rpc/exception/RpcUnFoundException.java": [],
+    "src/main/java/web/rpc/handle/MyClientHandle.java": [
+      "src/main/java/web/rpc/request/RpcRequest.java",
+      "src/main/java/web/rpc/responce/RpcResponce.java"
+    ],
+    "src/main/java/web/rpc/handle/MyServerHandle.java": [
+      "src/main/java/web/rpc/RpcInvoke.java",
+      "src/main/java/web/rpc/request/RpcRequest.java",
+      "src/main/java/web/rpc/responce/RpcResponce.java"
+    ],
+    "src/main/java/web/rpc/request/RpcRequest.java": [],
+    "src/main/java/web/rpc/request/codec/RpcRequestDecoder.java": [
+      "src/main/java/web/rpc/request/RpcRequest.java"
+    ],
+    "src/main/java/web/rpc/request/codec/RpcRequestEncoder.java": [
+      "src/main/java/web/rpc/request/RpcRequest.java"
+    ],
+    "src/main/java/web/rpc/responce/RpcResponce.java": [],
+    "src/main/java/web/rpc/responce/codec/RpcResponceDecode.java": [
+      "src/main/java/web/rpc/responce/RpcResponce.java"
+    ],
+    "src/main/java/web/rpc/responce/codec/RpcResponceEncode.java": [
+      "src/main/java/web/rpc/responce/RpcResponce.java"
+    ],
+    "src/main/java/web/server/HttpRequestHandler.java": [
+      "src/main/java/web/mvc/Dispatcher.java",
+      "src/main/java/web/mvc/annotation/RequestMethod.java",
+      "src/main/java/web/mvc/exception/BadRequestException.java",
+      "src/main/java/web/mvc/exception/NotFoundException.java"
+    ],
+    "src/main/java/web/server/HttpServer.java": [
+      "src/main/java/web/mvc/Dispatcher.java"
+    ],
+    "src/main/java/web/server/HttpServerInitializer.java": [
+      "src/main/java/web/mvc/Dispatcher.java"
+    ],
+    "src/main/java/web/server/WebResponse.java": [],
+    "src/test/java/web/ServerTest.java": [
+      "src/main/java/web/core/ClassScanner.java"
+    ],
+    "srv_err.txt": [],
+    "srv_out.txt": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "issues": [],
+  "warnings": [
+    "orphan file:.gitattributes",
+    "orphan config:.mvn/wrapper/maven-wrapper.properties",
+    "orphan document:AGENTS.md",
+    "orphan document:README.md",
+    "orphan config:body.json",
+    "orphan document:cp.txt",
+    "orphan file:mvnw",
+    "orphan file:mvnw.cmd",
+    "orphan config:pom.xml",
+    "orphan document:server_err.txt",
+    "orphan document:server_out.txt",
+    "orphan file:src/main/java/web/ioc/annotation/Type/Component.java",
+    "orphan file:src/main/java/web/ioc/annotation/Type/Configuration.java",
+    "orphan file:src/main/java/web/ioc/annotation/Type/Service.java",
+    "orphan document:srv_err.txt",
+    "orphan document:srv_out.txt"
+  ],
+  "stats": {
+    "nodes": 260,
+    "edges": 395,
+    "layers": 8,
+    "tour": 5
+  }
+}

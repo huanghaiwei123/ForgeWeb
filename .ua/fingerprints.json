@@ -1,0 +1,5214 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "e97cbbf55253fab17790d73fd51a611b7c53990e",
+  "generatedAt": "2026-09-29T10:28:52.529Z",
+  "files": {
+    ".gitattributes": {
+      "filePath": ".gitattributes",
+      "contentHash": "5775a77ad2f6d12dde053a3fb0cca4309189163f0888f4e7e984cd0ab327028b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 3,
+      "hasStructuralAnalysis": false
+    },
+    ".mvn/wrapper/maven-wrapper.properties": {
+      "filePath": ".mvn/wrapper/maven-wrapper.properties",
+      "contentHash": "488e1b3f2e641779d4636abf9390845f901e64607261bc3c0b0bfe4fe96e6706",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": false
+    },
+    "AGENTS.md": {
+      "filePath": "AGENTS.md",
+      "contentHash": "2ba915c66c8054cd18b248f316e5a222ff440fec9fe6c3084d3ea6ca30c8a7da",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "d31409162a5c8561acb2cd87f4f493790bfa3bcd3cafde5e85d030d107549339",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 5,
+      "hasStructuralAnalysis": false
+    },
+    "body.json": {
+      "filePath": "body.json",
+      "contentHash": "4070ae565c72a91edb7d32e27fe3dac5e3605db76c718979ee2add3f2820e1f1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "cp.txt": {
+      "filePath": "cp.txt",
+      "contentHash": "74bddd8e4d870fe22f886015a91287cb5016b327cabde2040ca75cdf5e775f1f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "mvnw": {
+      "filePath": "mvnw",
+      "contentHash": "cae96cef89ebea3531221f4ae17c23cf8edf67d00eae8306d4186ae1bbed4d02",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 296,
+      "hasStructuralAnalysis": false
+    },
+    "mvnw.cmd": {
+      "filePath": "mvnw.cmd",
+      "contentHash": "46eedb8419bd14fe70d5bb2916d7b6f51806e51b39d5b76a42610384ca929c1c",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 190,
+      "hasStructuralAnalysis": false
+    },
+    "pom.xml": {
+      "filePath": "pom.xml",
+      "contentHash": "5989d83e6c34063c1d728abf4d16bacd7cf0d67c5335c1f9ee3c4dc8261fc363",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 85,
+      "hasStructuralAnalysis": false
+    },
+    "server_err.txt": {
+      "filePath": "server_err.txt",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "server_out.txt": {
+      "filePath": "server_out.txt",
+      "contentHash": "2e4f8861d07e25ac45f1305c8fa2f4efb820a8fd94ef7b26a688937e0f9acc43",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 2,
+      "hasStructuralAnalysis": false
+    },
+    "src/main/java/test/MiniSpringboot.java": {
+      "filePath": "src/main/java/test/MiniSpringboot.java",
+      "contentHash": "93e1f7e7f69960ebb90fbd8a4cbe0bc5defa0caedfbd742e6e91d38f4b474ee7",
+      "functions": [
+        {
+          "name": "main",
+          "params": [
+            "args"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "MiniSpringboot",
+          "methods": [
+            "main"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.ApplicationServer",
+          "specifiers": [
+            "ApplicationServer"
+          ]
+        }
+      ],
+      "exports": [
+        "main",
+        "MiniSpringboot"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/test/aspect/AspectTest.java": {
+      "filePath": "src/main/java/test/aspect/AspectTest.java",
+      "contentHash": "8083ba440e8b524dba571181b1cc378d8ac0a3c21752e75085e052f12cc84afa",
+      "functions": [
+        {
+          "name": "before",
+          "params": [],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "after",
+          "params": [],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "AspectTest",
+          "methods": [
+            "before",
+            "after"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.aop.annotation.method.After",
+          "specifiers": [
+            "After"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Before",
+          "specifiers": [
+            "Before"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.type.Aspect",
+          "specifiers": [
+            "Aspect"
+          ]
+        }
+      ],
+      "exports": [
+        "before",
+        "after",
+        "AspectTest"
+      ],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/test/controller/HelloController.java": {
+      "filePath": "src/main/java/test/controller/HelloController.java",
+      "contentHash": "a990c0911e257c83aa8c5fdde7cfe8ae0e31483571626d78efd96d1d5fa93c5d",
+      "functions": [
+        {
+          "name": "hello",
+          "params": [],
+          "returnType": "String",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "hello2",
+          "params": [
+            "name",
+            "age"
+          ],
+          "returnType": "String",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "user",
+          "params": [
+            "id"
+          ],
+          "returnType": "String",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "saveUser",
+          "params": [
+            "user"
+          ],
+          "returnType": "User",
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "HelloController",
+          "methods": [
+            "hello",
+            "hello2",
+            "user",
+            "saveUser"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 27
+        }
+      ],
+      "imports": [
+        {
+          "source": "test.entity.User",
+          "specifiers": [
+            "User"
+          ]
+        },
+        {
+          "source": "web.ioc.annotation.Type.RestController",
+          "specifiers": [
+            "RestController"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.method.GetMapping",
+          "specifiers": [
+            "GetMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.method.PostMapping",
+          "specifiers": [
+            "PostMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.parameter.PathVariable",
+          "specifiers": [
+            "PathVariable"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.parameter.RequestBody",
+          "specifiers": [
+            "RequestBody"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.parameter.RequestParam",
+          "specifiers": [
+            "RequestParam"
+          ]
+        }
+      ],
+      "exports": [
+        "hello",
+        "hello2",
+        "user",
+        "saveUser",
+        "HelloController"
+      ],
+      "totalLines": 37,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/test/entity/User.java": {
+      "filePath": "src/main/java/test/entity/User.java",
+      "contentHash": "ad1979b608cbb97264ad1975c7c8ac784f77415758b4b4084cc13bb385f883fd",
+      "functions": [],
+      "classes": [
+        {
+          "name": "User",
+          "methods": [],
+          "properties": [
+            "name",
+            "age"
+          ],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.Data",
+          "specifiers": [
+            "Data"
+          ]
+        }
+      ],
+      "exports": [
+        "User"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ApplicationServer.java": {
+      "filePath": "src/main/java/web/ApplicationServer.java",
+      "contentHash": "8630e4c3b99825e383657b99832d220a1a71741d5dfd26b15ce6a2a0338d24ea",
+      "functions": [
+        {
+          "name": "run",
+          "params": [
+            "primaryClass"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApplicationServer",
+          "methods": [
+            "run"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 20
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.ioc.AnnotationConfigApplicationContext",
+          "specifiers": [
+            "AnnotationConfigApplicationContext"
+          ]
+        },
+        {
+          "source": "web.mvc.HandleMapping",
+          "specifiers": [
+            "HandleMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.Dispatcher",
+          "specifiers": [
+            "Dispatcher"
+          ]
+        },
+        {
+          "source": "web.mvc.TypeConverter",
+          "specifiers": [
+            "TypeConverter"
+          ]
+        },
+        {
+          "source": "web.rpc.RpcInvoke",
+          "specifiers": [
+            "RpcInvoke"
+          ]
+        },
+        {
+          "source": "web.rpc.ServiceRegistry",
+          "specifiers": [
+            "ServiceRegistry"
+          ]
+        },
+        {
+          "source": "web.server.HttpServer",
+          "specifiers": [
+            "HttpServer"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "run",
+        "ApplicationServer"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/AopProxy.java": {
+      "filePath": "src/main/java/web/aop/AopProxy.java",
+      "contentHash": "8e7717eb25ed874d6e642932445fa2e0bfda1e00e38095f499618863e57ed8fc",
+      "functions": [
+        {
+          "name": "AopProxy",
+          "params": [
+            "aspects"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "createProxy",
+          "params": [
+            "target"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 56
+        }
+      ],
+      "classes": [
+        {
+          "name": "AopProxy",
+          "methods": [
+            "AopProxy",
+            "createProxy"
+          ],
+          "properties": [
+            "aspects"
+          ],
+          "exported": true,
+          "lineCount": 68
+        }
+      ],
+      "imports": [
+        {
+          "source": "net.sf.cglib.proxy.Enhancer",
+          "specifiers": [
+            "Enhancer"
+          ]
+        },
+        {
+          "source": "net.sf.cglib.proxy.MethodInterceptor",
+          "specifiers": [
+            "MethodInterceptor"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.After",
+          "specifiers": [
+            "After"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Around",
+          "specifiers": [
+            "Around"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Before",
+          "specifiers": [
+            "Before"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "AopProxy",
+        "createProxy",
+        "AopProxy"
+      ],
+      "totalLines": 83,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/PointcutMatcher.java": {
+      "filePath": "src/main/java/web/aop/PointcutMatcher.java",
+      "contentHash": "bfeb35f1e3d5e175b74ef4d0c2a2c774284619334e58256ceafca520f9be34f9",
+      "functions": [
+        {
+          "name": "PointcutMatcher",
+          "params": [],
+          "exported": true,
+          "lineCount": 2
+        },
+        {
+          "name": "matches",
+          "params": [
+            "expression",
+            "targetClass",
+            "targetMethod"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 28
+        }
+      ],
+      "classes": [
+        {
+          "name": "PointcutMatcher",
+          "methods": [
+            "PointcutMatcher",
+            "matches"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 34
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        }
+      ],
+      "exports": [
+        "matches",
+        "PointcutMatcher"
+      ],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/ProceedingJoinPoint.java": {
+      "filePath": "src/main/java/web/aop/ProceedingJoinPoint.java",
+      "contentHash": "b744ab1cb5c6f1960d2f2ec1600be210a2efd3dc902cbb6ceb5e071da9758cb9",
+      "functions": [
+        {
+          "name": "ProceedingJoinPoint",
+          "params": [
+            "target",
+            "method",
+            "args",
+            "methodProxy"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "proceed",
+          "params": [],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProceedingJoinPoint",
+          "methods": [
+            "ProceedingJoinPoint",
+            "proceed"
+          ],
+          "properties": [
+            "target",
+            "method",
+            "args",
+            "methodProxy"
+          ],
+          "exported": true,
+          "lineCount": 19
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.Getter",
+          "specifiers": [
+            "Getter"
+          ]
+        },
+        {
+          "source": "net.sf.cglib.proxy.MethodProxy",
+          "specifiers": [
+            "MethodProxy"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        }
+      ],
+      "exports": [
+        "ProceedingJoinPoint",
+        "proceed",
+        "ProceedingJoinPoint"
+      ],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/annotation/method/After.java": {
+      "filePath": "src/main/java/web/aop/annotation/method/After.java",
+      "contentHash": "ebe4179987c2bb075de6be61092295ae4362b121a5029975088750ad5a2ec4d0",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/annotation/method/Around.java": {
+      "filePath": "src/main/java/web/aop/annotation/method/Around.java",
+      "contentHash": "d712aa1c1b3b81e30216f8054664527cb6aa479d404ea1b596e7c8bd0a0f7c42",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/annotation/method/Before.java": {
+      "filePath": "src/main/java/web/aop/annotation/method/Before.java",
+      "contentHash": "e647232a859b8800889ef8a0c085f55c33d595c4078d9bf685efac76513c5ffc",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/annotation/type/Aspect.java": {
+      "filePath": "src/main/java/web/aop/annotation/type/Aspect.java",
+      "contentHash": "e2b776b546982c8e99653fc49d4b11fd30c8b28c81dc29920a4261ab8afdfc42",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/common/Result.java": {
+      "filePath": "src/main/java/web/common/Result.java",
+      "contentHash": "1a5ffddba45cb8508bce95d88457e37035bda25018f8ea85f6e8aba14fcd5045",
+      "functions": [
+        {
+          "name": "Result",
+          "params": [
+            "code",
+            "msg",
+            "data"
+          ],
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "success",
+          "params": [
+            "data"
+          ],
+          "returnType": "Result<T>",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "Result",
+          "methods": [
+            "Result",
+            "success"
+          ],
+          "properties": [
+            "code",
+            "msg",
+            "data"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "Result",
+        "success",
+        "Result"
+      ],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/core/ClassScanner.java": {
+      "filePath": "src/main/java/web/core/ClassScanner.java",
+      "contentHash": "bca9efa92e4896a2557083fe200cc7870c624a4f10daf22a6faf5e212cdb90be",
+      "functions": [
+        {
+          "name": "scan",
+          "params": [
+            "packageName"
+          ],
+          "returnType": "List<Class<?>>",
+          "exported": true,
+          "lineCount": 19
+        },
+        {
+          "name": "scanDir",
+          "params": [
+            "file",
+            "packageName",
+            "classes"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 23
+        }
+      ],
+      "classes": [
+        {
+          "name": "ClassScanner",
+          "methods": [
+            "scan",
+            "scanDir"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 47
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.io.File",
+          "specifiers": [
+            "File"
+          ]
+        },
+        {
+          "source": "java.io.IOException",
+          "specifiers": [
+            "IOException"
+          ]
+        },
+        {
+          "source": "java.net.URISyntaxException",
+          "specifiers": [
+            "URISyntaxException"
+          ]
+        },
+        {
+          "source": "java.net.URL",
+          "specifiers": [
+            "URL"
+          ]
+        },
+        {
+          "source": "java.util.ArrayList",
+          "specifiers": [
+            "ArrayList"
+          ]
+        },
+        {
+          "source": "java.util.Enumeration",
+          "specifiers": [
+            "Enumeration"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "scan",
+        "scanDir",
+        "ClassScanner"
+      ],
+      "totalLines": 62,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/exception/GlobalException.java": {
+      "filePath": "src/main/java/web/exception/GlobalException.java",
+      "contentHash": "9075b38894b3058ba685309ce3334fc60c566a8a792c132c186a8cdb2ff477e5",
+      "functions": [],
+      "classes": [
+        {
+          "name": "GlobalException",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 2
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "GlobalException"
+      ],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/AnnotationConfigApplicationContext.java": {
+      "filePath": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+      "contentHash": "5ced7f8b43b2e0755f7c7460fefd2cb3e295a1f3f722b1079c69e540a311515e",
+      "functions": [
+        {
+          "name": "AnnotationConfigApplicationContext",
+          "params": [
+            "packageName"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "registerScanForRpc",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "getBeans",
+          "params": [
+            "scan"
+          ],
+          "returnType": "Map<String,Object>",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "getBeanFactory",
+          "params": [
+            "scan"
+          ],
+          "returnType": "BeanFactory",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "getBeans",
+          "params": [],
+          "returnType": "List<Object>",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "injectDependence",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "getAllFields",
+          "params": [
+            "aClass"
+          ],
+          "returnType": "List<Field>",
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "getFieldDependence",
+          "params": [
+            "type"
+          ],
+          "returnType": "Object",
+          "exported": false,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "AnnotationConfigApplicationContext",
+          "methods": [
+            "AnnotationConfigApplicationContext",
+            "registerScanForRpc",
+            "getBeans",
+            "getBeanFactory",
+            "getBeans",
+            "injectDependence",
+            "getAllFields",
+            "getFieldDependence"
+          ],
+          "properties": [
+            "scan",
+            "beans"
+          ],
+          "exported": true,
+          "lineCount": 75
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.core.ClassScanner",
+          "specifiers": [
+            "ClassScanner"
+          ]
+        },
+        {
+          "source": "web.ioc.annotation.Fileld.Autowired",
+          "specifiers": [
+            "Autowired"
+          ]
+        },
+        {
+          "source": "web.ioc.factory",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "web.ioc.reader.BeanDefinitionReader",
+          "specifiers": [
+            "BeanDefinitionReader"
+          ]
+        },
+        {
+          "source": "web.ioc.registry.BeanDefinitionRegistry",
+          "specifiers": [
+            "BeanDefinitionRegistry"
+          ]
+        },
+        {
+          "source": "web.rpc.RpcInvoke",
+          "specifiers": [
+            "RpcInvoke"
+          ]
+        },
+        {
+          "source": "web.rpc.ServiceRegistry",
+          "specifiers": [
+            "ServiceRegistry"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Field",
+          "specifiers": [
+            "Field"
+          ]
+        },
+        {
+          "source": "java.util",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [
+        "AnnotationConfigApplicationContext",
+        "getBeans",
+        "AnnotationConfigApplicationContext"
+      ],
+      "totalLines": 89,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/annotation/Fileld/Autowired.java": {
+      "filePath": "src/main/java/web/ioc/annotation/Fileld/Autowired.java",
+      "contentHash": "decb87cfc14397b090191d471d2893ea9a3536ecea14c2b1debb06249ac6bbb5",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/annotation/Fileld/Scope.java": {
+      "filePath": "src/main/java/web/ioc/annotation/Fileld/Scope.java",
+      "contentHash": "edc1f2bc50cb740cf7db18b7056cc036d58f6546ab8c0bb5b164495eb386873f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "web.ioc.enumeration.ScopeEnum",
+          "specifiers": [
+            "ScopeEnum"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/annotation/Type/Component.java": {
+      "filePath": "src/main/java/web/ioc/annotation/Type/Component.java",
+      "contentHash": "f91e5ca70088d7fdc13e580d96d7fe323d0c86b732bde6698caef2cd05d311a5",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/annotation/Type/Configuration.java": {
+      "filePath": "src/main/java/web/ioc/annotation/Type/Configuration.java",
+      "contentHash": "a759b09cc57c9336b63e6ab6166c5feb31226194400035bf5346d45660cfca86",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/annotation/Type/Controller.java": {
+      "filePath": "src/main/java/web/ioc/annotation/Type/Controller.java",
+      "contentHash": "f76f6a955a60d6ee43384438572140b1b216ed4390dcc8d120614b4371c42389",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/annotation/Type/RestController.java": {
+      "filePath": "src/main/java/web/ioc/annotation/Type/RestController.java",
+      "contentHash": "8ad1397387ce933aa0692e7877351606a113c9d5329cc6e2a4a9940641922d58",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/annotation/Type/Service.java": {
+      "filePath": "src/main/java/web/ioc/annotation/Type/Service.java",
+      "contentHash": "e078653ef9434914b69a3bba50c596759f3085c1b84775191452101cc9573b6f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/enumeration/ScopeEnum.java": {
+      "filePath": "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+      "contentHash": "6f08b164823f4f162b99cb5cd9d56fa767dc488b651258f2cdc714756966e950",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ScopeEnum",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "ScopeEnum"
+      ],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/exception/NoSuchBeanException.java": {
+      "filePath": "src/main/java/web/ioc/exception/NoSuchBeanException.java",
+      "contentHash": "0d02e1f607217a645072fb061640f4e07409497a3ec3cea972dcb8715af94de1",
+      "functions": [
+        {
+          "name": "NoSuchBeanException",
+          "params": [
+            "message"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoSuchBeanException",
+          "methods": [
+            "NoSuchBeanException"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "NoSuchBeanException",
+        "NoSuchBeanException"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/exception/NoUniqueBeanException.java": {
+      "filePath": "src/main/java/web/ioc/exception/NoUniqueBeanException.java",
+      "contentHash": "be167c2ad187ed0a22a76a88b851835b140431a67f63320edafcf01e04a44304",
+      "functions": [
+        {
+          "name": "NoUniqueBeanException",
+          "params": [
+            "message"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoUniqueBeanException",
+          "methods": [
+            "NoUniqueBeanException"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "NoUniqueBeanException",
+        "NoUniqueBeanException"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/factory/BeanFactory.java": {
+      "filePath": "src/main/java/web/ioc/factory/BeanFactory.java",
+      "contentHash": "04123ff678f14935da39a8529929a1fbc8a3b094cd84c68c3199dff27a4e57d5",
+      "functions": [],
+      "classes": [
+        {
+          "name": "BeanFactory",
+          "methods": [
+            "getBean",
+            "getBean",
+            "getBean",
+            "getBeans",
+            "containsBean",
+            "isSingleton",
+            "isPrototype"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 9
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "BeanFactory"
+      ],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/factory/DefaultBeanFactory.java": {
+      "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+      "contentHash": "0be2fdd0d3067b3f25fd6aba7d96dde61665bfc51551c02ee746202f60f114d8",
+      "functions": [
+        {
+          "name": "DefaultBeanFactory",
+          "params": [
+            "definitions"
+          ],
+          "exported": true,
+          "lineCount": 36
+        },
+        {
+          "name": "ifAspectBean",
+          "params": [
+            "bean"
+          ],
+          "returnType": "boolean",
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "getBean",
+          "params": [
+            "beanName"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 16
+        },
+        {
+          "name": "getBean",
+          "params": [
+            "beanName",
+            "requiredType"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "getBean",
+          "params": [
+            "requiredType"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 21
+        },
+        {
+          "name": "getBeans",
+          "params": [],
+          "returnType": "Map<String, Object>",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "containsBean",
+          "params": [
+            "beanName"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "isSingleton",
+          "params": [
+            "beanName"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "isPrototype",
+          "params": [
+            "beanName"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [
+        {
+          "name": "DefaultBeanFactory",
+          "methods": [
+            "DefaultBeanFactory",
+            "ifAspectBean",
+            "getBean",
+            "getBean",
+            "getBean",
+            "getBeans",
+            "containsBean",
+            "isSingleton",
+            "isPrototype"
+          ],
+          "properties": [
+            "beans",
+            "singletonBeans",
+            "beanDefinitions",
+            "singletonBeanRegistry",
+            "om"
+          ],
+          "exported": true,
+          "lineCount": 138
+        }
+      ],
+      "imports": [
+        {
+          "source": "com.fasterxml.jackson.databind.ObjectMapper",
+          "specifiers": [
+            "ObjectMapper"
+          ]
+        },
+        {
+          "source": "lombok.Getter",
+          "specifiers": [
+            "Getter"
+          ]
+        },
+        {
+          "source": "web.aop.AopProxy",
+          "specifiers": [
+            "AopProxy"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.type.Aspect",
+          "specifiers": [
+            "Aspect"
+          ]
+        },
+        {
+          "source": "web.ioc.enumeration.ScopeEnum",
+          "specifiers": [
+            "ScopeEnum"
+          ]
+        },
+        {
+          "source": "web.ioc.exception.NoSuchBeanException",
+          "specifiers": [
+            "NoSuchBeanException"
+          ]
+        },
+        {
+          "source": "web.ioc.exception.NoUniqueBeanException",
+          "specifiers": [
+            "NoUniqueBeanException"
+          ]
+        },
+        {
+          "source": "web.ioc.pojo.BeanDefinition",
+          "specifiers": [
+            "BeanDefinition"
+          ]
+        },
+        {
+          "source": "web.ioc.registry.SingletonBeanRegistry",
+          "specifiers": [
+            "SingletonBeanRegistry"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.InvocationTargetException",
+          "specifiers": [
+            "InvocationTargetException"
+          ]
+        },
+        {
+          "source": "java.util",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "java.util.stream.Collectors",
+          "specifiers": [
+            "Collectors"
+          ]
+        }
+      ],
+      "exports": [
+        "DefaultBeanFactory",
+        "getBean",
+        "getBean",
+        "getBean",
+        "getBeans",
+        "containsBean",
+        "isSingleton",
+        "isPrototype",
+        "DefaultBeanFactory"
+      ],
+      "totalLines": 155,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/pojo/BeanDefinition.java": {
+      "filePath": "src/main/java/web/ioc/pojo/BeanDefinition.java",
+      "contentHash": "04879738d242412050bcc439b8de330bd37ff64c87ced9ee0166e163c97012e7",
+      "functions": [],
+      "classes": [
+        {
+          "name": "BeanDefinition",
+          "methods": [],
+          "properties": [
+            "beanName",
+            "beanClass",
+            "scopeEnum",
+            "isNeedProxy"
+          ],
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.AllArgsConstructor",
+          "specifiers": [
+            "AllArgsConstructor"
+          ]
+        },
+        {
+          "source": "lombok.Data",
+          "specifiers": [
+            "Data"
+          ]
+        },
+        {
+          "source": "web.ioc.enumeration.ScopeEnum",
+          "specifiers": [
+            "ScopeEnum"
+          ]
+        }
+      ],
+      "exports": [
+        "BeanDefinition"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/reader/BeanDefinitionReader.java": {
+      "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+      "contentHash": "3abafbf6a28583eb28756aafb8ffd01d9ef7c16f3f649d5f50e2d4723bb04a5e",
+      "functions": [
+        {
+          "name": "BeanDefinitionReader",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "parseClass",
+          "params": [
+            "aclazz"
+          ],
+          "returnType": "BeanDefinitionRegistry",
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "findAspect",
+          "params": [
+            "aclazz"
+          ],
+          "returnType": "Set<String>",
+          "exported": false,
+          "lineCount": 20
+        },
+        {
+          "name": "needProxy",
+          "params": [
+            "beanClass",
+            "aspectMethodNames"
+          ],
+          "returnType": "boolean",
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "addAspectMethodName",
+          "params": [
+            "aspectMethodNames",
+            "methodName"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "BeanDefinitionReader",
+          "methods": [
+            "BeanDefinitionReader",
+            "parseClass",
+            "findAspect",
+            "needProxy",
+            "addAspectMethodName"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 66
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.aop.annotation.method.After",
+          "specifiers": [
+            "After"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Around",
+          "specifiers": [
+            "Around"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Before",
+          "specifiers": [
+            "Before"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.type.Aspect",
+          "specifiers": [
+            "Aspect"
+          ]
+        },
+        {
+          "source": "web.aop.PointcutMatcher",
+          "specifiers": [
+            "PointcutMatcher"
+          ]
+        },
+        {
+          "source": "web.ioc.annotation.Fileld.Scope",
+          "specifiers": [
+            "Scope"
+          ]
+        },
+        {
+          "source": "web.ioc.annotation.Type",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "web.ioc.enumeration.ScopeEnum",
+          "specifiers": [
+            "ScopeEnum"
+          ]
+        },
+        {
+          "source": "web.ioc.pojo.BeanDefinition",
+          "specifiers": [
+            "BeanDefinition"
+          ]
+        },
+        {
+          "source": "web.ioc.registry.BeanDefinitionRegistry",
+          "specifiers": [
+            "BeanDefinitionRegistry"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        },
+        {
+          "source": "java.util.HashSet",
+          "specifiers": [
+            "HashSet"
+          ]
+        },
+        {
+          "source": "java.util.LinkedList",
+          "specifiers": [
+            "LinkedList"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Set",
+          "specifiers": [
+            "Set"
+          ]
+        }
+      ],
+      "exports": [
+        "BeanDefinitionReader",
+        "parseClass",
+        "BeanDefinitionReader"
+      ],
+      "totalLines": 87,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java": {
+      "filePath": "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java",
+      "contentHash": "f04f901df2fc3816ebf7be8a1e13f7713c1e94885af7df97875b3fe1c830b983",
+      "functions": [
+        {
+          "name": "BeanDefinitionRegistry",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "BeanDefinitionRegistry",
+          "params": [
+            "beanDefinitions"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "getBeanDefinitions",
+          "params": [],
+          "returnType": "List<BeanDefinition>",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "BeanDefinitionRegistry",
+          "methods": [
+            "BeanDefinitionRegistry",
+            "BeanDefinitionRegistry",
+            "getBeanDefinitions"
+          ],
+          "properties": [
+            "beanDefinitions"
+          ],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.ioc.pojo.BeanDefinition",
+          "specifiers": [
+            "BeanDefinition"
+          ]
+        },
+        {
+          "source": "java.util.ArrayList",
+          "specifiers": [
+            "ArrayList"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "BeanDefinitionRegistry",
+        "BeanDefinitionRegistry",
+        "getBeanDefinitions",
+        "BeanDefinitionRegistry"
+      ],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/registry/SingletonBeanRegistry.java": {
+      "filePath": "src/main/java/web/ioc/registry/SingletonBeanRegistry.java",
+      "contentHash": "b7615b876edc177a91c99cf0f175c4a63f0fa0388d9a16c1b7a1cf240ebd51b3",
+      "functions": [
+        {
+          "name": "SingletonBeanRegistry",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "SingletonBeanRegistry",
+          "params": [
+            "singletonBeans"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "getSingletonBeans",
+          "params": [],
+          "returnType": "Map<String,Object>",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "addSingletonBeans",
+          "params": [
+            "singletonBeans"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "SingletonBeanRegistry",
+          "methods": [
+            "SingletonBeanRegistry",
+            "SingletonBeanRegistry",
+            "getSingletonBeans",
+            "addSingletonBeans"
+          ],
+          "properties": [
+            "singletonBeans"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.util.HashMap",
+          "specifiers": [
+            "HashMap"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "SingletonBeanRegistry",
+        "SingletonBeanRegistry",
+        "getSingletonBeans",
+        "addSingletonBeans",
+        "SingletonBeanRegistry"
+      ],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/ArgumentResolver.java": {
+      "filePath": "src/main/java/web/mvc/ArgumentResolver.java",
+      "contentHash": "53ad1144d971f216ef55c977dd60729171350cbae920f78df77c61c307cf9ff5",
+      "functions": [
+        {
+          "name": "ArgumentResolver",
+          "params": [
+            "req",
+            "result",
+            "queryParams",
+            "requestMethod"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "resolver",
+          "params": [],
+          "returnType": "Object[]",
+          "exported": true,
+          "lineCount": 47
+        }
+      ],
+      "classes": [
+        {
+          "name": "ArgumentResolver",
+          "methods": [
+            "ArgumentResolver",
+            "resolver"
+          ],
+          "properties": [
+            "result",
+            "queryParams",
+            "req",
+            "requestMethod",
+            "objectMapper"
+          ],
+          "exported": true,
+          "lineCount": 63
+        }
+      ],
+      "imports": [
+        {
+          "source": "com.fasterxml.jackson.core.JsonProcessingException",
+          "specifiers": [
+            "JsonProcessingException"
+          ]
+        },
+        {
+          "source": "com.fasterxml.jackson.databind.ObjectMapper",
+          "specifiers": [
+            "ObjectMapper"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.http.FullHttpRequest",
+          "specifiers": [
+            "FullHttpRequest"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "web.mvc.exception.BadRequestException",
+          "specifiers": [
+            "BadRequestException"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.parameter.PathVariable",
+          "specifiers": [
+            "PathVariable"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.parameter.RequestBody",
+          "specifiers": [
+            "RequestBody"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.parameter.RequestParam",
+          "specifiers": [
+            "RequestParam"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Parameter",
+          "specifiers": [
+            "Parameter"
+          ]
+        },
+        {
+          "source": "java.nio.charset.StandardCharsets",
+          "specifiers": [
+            "StandardCharsets"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        },
+        {
+          "source": "java.util.Set",
+          "specifiers": [
+            "Set"
+          ]
+        }
+      ],
+      "exports": [
+        "ArgumentResolver",
+        "resolver",
+        "ArgumentResolver"
+      ],
+      "totalLines": 84,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/Dispatcher.java": {
+      "filePath": "src/main/java/web/mvc/Dispatcher.java",
+      "contentHash": "269fd445f6f4cb6dae71798d459969b2fd479006901b99ff881b1fcfe3d78d2b",
+      "functions": [
+        {
+          "name": "Dispatcher",
+          "params": [
+            "handleMapping"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "dispatch",
+          "params": [
+            "req",
+            "requestMethod"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "parseQuery",
+          "params": [
+            "uri"
+          ],
+          "returnType": "Map<String, String>",
+          "exported": false,
+          "lineCount": 15
+        }
+      ],
+      "classes": [
+        {
+          "name": "Dispatcher",
+          "methods": [
+            "Dispatcher",
+            "dispatch",
+            "parseQuery"
+          ],
+          "properties": [
+            "handleMapping"
+          ],
+          "exported": true,
+          "lineCount": 44
+        }
+      ],
+      "imports": [
+        {
+          "source": "io.netty.handler.codec.http.FullHttpRequest",
+          "specifiers": [
+            "FullHttpRequest"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "web.mvc.exception.NotFoundException",
+          "specifiers": [
+            "NotFoundException"
+          ]
+        },
+        {
+          "source": "java.util.HashMap",
+          "specifiers": [
+            "HashMap"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "Dispatcher",
+        "dispatch",
+        "Dispatcher"
+      ],
+      "totalLines": 56,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/HandleExecution.java": {
+      "filePath": "src/main/java/web/mvc/HandleExecution.java",
+      "contentHash": "a6c112defb2c359238b2ad395f04fb48b7b1365977d372dde2e752c7b698f2f1",
+      "functions": [
+        {
+          "name": "HandleExecution",
+          "params": [
+            "controller",
+            "method"
+          ],
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "getMethod",
+          "params": [],
+          "returnType": "Method",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "execute",
+          "params": [],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [
+        {
+          "name": "HandleExecution",
+          "methods": [
+            "HandleExecution",
+            "getMethod",
+            "execute"
+          ],
+          "properties": [
+            "controller",
+            "method"
+          ],
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.lang.reflect.InvocationTargetException",
+          "specifiers": [
+            "InvocationTargetException"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        }
+      ],
+      "exports": [
+        "HandleExecution",
+        "getMethod",
+        "execute",
+        "HandleExecution"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/HandleMapping.java": {
+      "filePath": "src/main/java/web/mvc/HandleMapping.java",
+      "contentHash": "d380e6d2b743cd9483a7ad0ab607e73f3ef842e8f3addb9ca963f0343d8fb0db",
+      "functions": [
+        {
+          "name": "register",
+          "params": [
+            "beans"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 28
+        },
+        {
+          "name": "fillMapping",
+          "params": [
+            "annotation",
+            "controller",
+            "method",
+            "preUrl"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "registerUrlPattern",
+          "params": [
+            "url",
+            "execution"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "get",
+          "params": [
+            "path",
+            "requestMethod"
+          ],
+          "returnType": "MappingResult",
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "normalizeUrl",
+          "params": [
+            "preUrl",
+            "value"
+          ],
+          "returnType": "String",
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "methodOf",
+          "params": [
+            "annotation",
+            "preUrl"
+          ],
+          "returnType": "String",
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "classes": [
+        {
+          "name": "HandleMapping",
+          "methods": [
+            "register",
+            "fillMapping",
+            "registerUrlPattern",
+            "get",
+            "normalizeUrl",
+            "methodOf"
+          ],
+          "properties": [
+            "mapping",
+            "urlPatterns"
+          ],
+          "exported": true,
+          "lineCount": 126
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.ioc.annotation.Type.Controller",
+          "specifiers": [
+            "Controller"
+          ]
+        },
+        {
+          "source": "web.ioc.annotation.Type.RestController",
+          "specifiers": [
+            "RestController"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.method.DeleteMapping",
+          "specifiers": [
+            "DeleteMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.method.GetMapping",
+          "specifiers": [
+            "GetMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.method.PostMapping",
+          "specifiers": [
+            "PostMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.method.PutMapping",
+          "specifiers": [
+            "PutMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.type.RequestMapping",
+          "specifiers": [
+            "RequestMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Annotation",
+          "specifiers": [
+            "Annotation"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        },
+        {
+          "source": "java.util.ArrayList",
+          "specifiers": [
+            "ArrayList"
+          ]
+        },
+        {
+          "source": "java.util.Collections",
+          "specifiers": [
+            "Collections"
+          ]
+        },
+        {
+          "source": "java.util.HashMap",
+          "specifiers": [
+            "HashMap"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        },
+        {
+          "source": "java.util.regex.Matcher",
+          "specifiers": [
+            "Matcher"
+          ]
+        },
+        {
+          "source": "java.util.regex.Pattern",
+          "specifiers": [
+            "Pattern"
+          ]
+        }
+      ],
+      "exports": [
+        "register",
+        "get",
+        "methodOf",
+        "HandleMapping"
+      ],
+      "totalLines": 147,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/MappingResult.java": {
+      "filePath": "src/main/java/web/mvc/MappingResult.java",
+      "contentHash": "3fd9e77f541a8c11efd1c7584f19301245deb8103fd065ceec2f4dc900294a35",
+      "functions": [
+        {
+          "name": "MappingResult",
+          "params": [
+            "execution",
+            "pathParams"
+          ],
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "getExecution",
+          "params": [],
+          "returnType": "HandleExecution",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "getPathParams",
+          "params": [],
+          "returnType": "Map<String, String>",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "MappingResult",
+          "methods": [
+            "MappingResult",
+            "getExecution",
+            "getPathParams"
+          ],
+          "properties": [
+            "execution",
+            "pathParams"
+          ],
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "MappingResult",
+        "getExecution",
+        "getPathParams",
+        "MappingResult"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/TypeConverter.java": {
+      "filePath": "src/main/java/web/mvc/TypeConverter.java",
+      "contentHash": "dd3ac01e8072bf5c8e5edff469d211fbb8cfdb1d092265bbec0d73cf55c328be",
+      "functions": [
+        {
+          "name": "convert",
+          "params": [
+            "type",
+            "value"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "setBeans",
+          "params": [
+            "beans"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "TypeConverter",
+          "methods": [
+            "convert",
+            "setBeans"
+          ],
+          "properties": [
+            "beans"
+          ],
+          "exported": true,
+          "lineCount": 28
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.Getter",
+          "specifiers": [
+            "Getter"
+          ]
+        },
+        {
+          "source": "lombok.val",
+          "specifiers": [
+            "val"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Field",
+          "specifiers": [
+            "Field"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.InvocationTargetException",
+          "specifiers": [
+            "InvocationTargetException"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "beans",
+        "convert",
+        "setBeans",
+        "TypeConverter"
+      ],
+      "totalLines": 42,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/RequestMethod.java": {
+      "filePath": "src/main/java/web/mvc/annotation/RequestMethod.java",
+      "contentHash": "d8b346877955989a9710bbca03e1f29531e92e4a9a54c49f1ee26e657854ee58",
+      "functions": [
+        {
+          "name": "RequestMethod",
+          "params": [
+            "value"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "getValue",
+          "params": [],
+          "returnType": "String",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "RequestMethod",
+          "methods": [
+            "RequestMethod",
+            "getValue"
+          ],
+          "properties": [
+            "value"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "getValue",
+        "RequestMethod"
+      ],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/method/DeleteMapping.java": {
+      "filePath": "src/main/java/web/mvc/annotation/method/DeleteMapping.java",
+      "contentHash": "a1e333bc21e8ec2cd6e6b27a49cb22e1c61679449645630171a22aa6ec98fbbd",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/method/GetMapping.java": {
+      "filePath": "src/main/java/web/mvc/annotation/method/GetMapping.java",
+      "contentHash": "ff5591b7d3886273306e3fa1d4a61e6fa79cbfc17dc5b4b9697adf7a0716e62a",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/method/PostMapping.java": {
+      "filePath": "src/main/java/web/mvc/annotation/method/PostMapping.java",
+      "contentHash": "a479256a386e4a1a2e7df29f5dabf4d9c15e60be0ab6fce201a9da88df0f1e19",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/method/PutMapping.java": {
+      "filePath": "src/main/java/web/mvc/annotation/method/PutMapping.java",
+      "contentHash": "1c06c14d10a89d10b30c719eddaccb3bb9b90644e31ecbcb5f1b50ae2444a2a2",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/parameter/PathVariable.java": {
+      "filePath": "src/main/java/web/mvc/annotation/parameter/PathVariable.java",
+      "contentHash": "2848a61f6eb11a220ff9aa40767c63bbf269cabde7d692e87e6fd654572b5773",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/parameter/RequestBody.java": {
+      "filePath": "src/main/java/web/mvc/annotation/parameter/RequestBody.java",
+      "contentHash": "8969339ac7ffa7f1ab7bfcd6f78e8201f7e25b770fb62e693d17215b9de7f183",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/parameter/RequestParam.java": {
+      "filePath": "src/main/java/web/mvc/annotation/parameter/RequestParam.java",
+      "contentHash": "b81d33e45586d60ca43ca1272f38655b0abc49e0da63861a8b812e1b000a720f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/annotation/type/RequestMapping.java": {
+      "filePath": "src/main/java/web/mvc/annotation/type/RequestMapping.java",
+      "contentHash": "05c46240e8bb2c2bc33849a83c1bb4a34098e34b6e06b0052dd59e10cb971589",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "java.lang.annotation",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/exception/BadRequestException.java": {
+      "filePath": "src/main/java/web/mvc/exception/BadRequestException.java",
+      "contentHash": "003c65b62038961a9c0423d4bd442464d56292aaa1a2a064dd98931e948a41b0",
+      "functions": [
+        {
+          "name": "BadRequestException",
+          "params": [],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "BadRequestException",
+          "params": [
+            "msg"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "BadRequestException",
+          "methods": [
+            "BadRequestException",
+            "BadRequestException"
+          ],
+          "properties": [
+            "serialVersionUID",
+            "msg"
+          ],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "BadRequestException",
+        "BadRequestException",
+        "BadRequestException"
+      ],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/mvc/exception/NotFoundException.java": {
+      "filePath": "src/main/java/web/mvc/exception/NotFoundException.java",
+      "contentHash": "1e835b3cf7a5f675b2c91254bb765297e5d253f054642fcee3446c43237602d4",
+      "functions": [
+        {
+          "name": "NotFoundException",
+          "params": [
+            "message"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotFoundException",
+          "methods": [
+            "NotFoundException"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "NotFoundException",
+        "NotFoundException"
+      ],
+      "totalLines": 10,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/EntityMetaData.java": {
+      "filePath": "src/main/java/web/orm/EntityMetaData.java",
+      "contentHash": "92c65bcb17cb6c8ea476db827bceba0491259fa94b0bacff7d784880468bae76",
+      "functions": [
+        {
+          "name": "EntityMetaData",
+          "params": [],
+          "exported": true,
+          "lineCount": 2
+        },
+        {
+          "name": "EntityMetaData",
+          "params": [
+            "tableName",
+            "columns",
+            "id"
+          ],
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "parse",
+          "params": [
+            "clazz"
+          ],
+          "returnType": "EntityMetaData",
+          "exported": true,
+          "lineCount": 20
+        }
+      ],
+      "classes": [
+        {
+          "name": "EntityMetaData",
+          "methods": [
+            "EntityMetaData",
+            "EntityMetaData",
+            "parse"
+          ],
+          "properties": [
+            "tableName",
+            "columns",
+            "id"
+          ],
+          "exported": true,
+          "lineCount": 34
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.Data",
+          "specifiers": [
+            "Data"
+          ]
+        },
+        {
+          "source": "web.orm.annotation.Column",
+          "specifiers": [
+            "Column"
+          ]
+        },
+        {
+          "source": "web.orm.annotation.Id",
+          "specifiers": [
+            "Id"
+          ]
+        },
+        {
+          "source": "web.orm.annotation.Table",
+          "specifiers": [
+            "Table"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Field",
+          "specifiers": [
+            "Field"
+          ]
+        },
+        {
+          "source": "java.util.LinkedHashMap",
+          "specifiers": [
+            "LinkedHashMap"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "EntityMetaData",
+        "EntityMetaData",
+        "parse",
+        "EntityMetaData"
+      ],
+      "totalLines": 44,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/SqlGenerate.java": {
+      "filePath": "src/main/java/web/orm/SqlGenerate.java",
+      "contentHash": "3d1a6d8d3b304fb13c84ed4143d1147ee1bbe58d238027274796180162789b40",
+      "functions": [
+        {
+          "name": "insertSql",
+          "params": [
+            "end",
+            "entity"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 71
+        },
+        {
+          "name": "querySql",
+          "params": [
+            "entityClass",
+            "end",
+            "required",
+            "condition"
+          ],
+          "returnType": "List<Object>",
+          "exported": true,
+          "lineCount": 33
+        },
+        {
+          "name": "updateSql",
+          "params": [
+            "end",
+            "entity",
+            "condition"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 62
+        },
+        {
+          "name": "deleteSql",
+          "params": [
+            "end",
+            "condition"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 28
+        },
+        {
+          "name": "queryWithAll",
+          "params": [
+            "entityClass",
+            "conn",
+            "end",
+            "condition"
+          ],
+          "returnType": "List<Object>",
+          "exported": false,
+          "lineCount": 45
+        },
+        {
+          "name": "queryNotAll",
+          "params": [
+            "entityClass",
+            "conn",
+            "end",
+            "required",
+            "condition"
+          ],
+          "returnType": "List<Object>",
+          "exported": false,
+          "lineCount": 63
+        },
+        {
+          "name": "getJdbcInformation",
+          "params": [],
+          "returnType": "Map<String,String>",
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "classes": [
+        {
+          "name": "SqlGenerate",
+          "methods": [
+            "insertSql",
+            "querySql",
+            "updateSql",
+            "deleteSql",
+            "queryWithAll",
+            "queryNotAll",
+            "getJdbcInformation"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 369
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.val",
+          "specifiers": [
+            "val"
+          ]
+        },
+        {
+          "source": "web.orm.annotation.Column",
+          "specifiers": [
+            "Column"
+          ]
+        },
+        {
+          "source": "web.orm.annotation.Id",
+          "specifiers": [
+            "Id"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Field",
+          "specifiers": [
+            "Field"
+          ]
+        },
+        {
+          "source": "java.sql",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "java.util",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [
+        "insertSql",
+        "querySql",
+        "updateSql",
+        "deleteSql",
+        "getJdbcInformation",
+        "SqlGenerate"
+      ],
+      "totalLines": 380,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/TypeConverter.java": {
+      "filePath": "src/main/java/web/orm/TypeConverter.java",
+      "contentHash": "0cc136129b181d74067f1971d1fa84c78c7f9dea3feda33df01780b92c651d91",
+      "functions": [
+        {
+          "name": "convert",
+          "params": [
+            "type",
+            "value"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 18
+        },
+        {
+          "name": "setBeans",
+          "params": [
+            "beans"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "TypeConverter",
+          "methods": [
+            "convert",
+            "setBeans"
+          ],
+          "properties": [
+            "beans"
+          ],
+          "exported": true,
+          "lineCount": 28
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.Getter",
+          "specifiers": [
+            "Getter"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "beans",
+        "convert",
+        "setBeans",
+        "TypeConverter"
+      ],
+      "totalLines": 38,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/annotation/Column.java": {
+      "filePath": "src/main/java/web/orm/annotation/Column.java",
+      "contentHash": "7807bb2b5cff12190b944f2cea4c90737e5dcac0faa20a85aecf3ed31b38f5e6",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/annotation/Id.java": {
+      "filePath": "src/main/java/web/orm/annotation/Id.java",
+      "contentHash": "0dccf1730d2d2db2241c3818c78a79c4b0cf8b6e248f0a6626a1ca3d9b9d1f9d",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/annotation/Table.java": {
+      "filePath": "src/main/java/web/orm/annotation/Table.java",
+      "contentHash": "95de98f6e8da256bff580390f216b6d1a4120b102aa6ae2837537b92bbbd6887",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/service/EntityQueryWrapper.java": {
+      "filePath": "src/main/java/web/orm/service/EntityQueryWrapper.java",
+      "contentHash": "c2751e7bbc8439e5d78250b3341fbbe87df3f00ce9013167decb690127863249",
+      "functions": [],
+      "classes": [
+        {
+          "name": "EntityQueryWrapper",
+          "methods": [
+            "query"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Set",
+          "specifiers": [
+            "Set"
+          ]
+        }
+      ],
+      "exports": [
+        "EntityQueryWrapper"
+      ],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/service/EntityUpdateWrapper.java": {
+      "filePath": "src/main/java/web/orm/service/EntityUpdateWrapper.java",
+      "contentHash": "3400a09b76b0fbc9b7389afd5ee3624f0c3e2e61a6cefddaad652b7d148ce4f2",
+      "functions": [],
+      "classes": [
+        {
+          "name": "EntityUpdateWrapper",
+          "methods": [
+            "insert",
+            "update",
+            "delete"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "EntityUpdateWrapper"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/service/impl/EntityQueryWrapperImpl.java": {
+      "filePath": "src/main/java/web/orm/service/impl/EntityQueryWrapperImpl.java",
+      "contentHash": "438f621b636c293c4689562ed9bbb26dc765eb38b89fc4d78f1b417c5c441919",
+      "functions": [
+        {
+          "name": "query",
+          "params": [
+            "entityClass",
+            "required",
+            "condition"
+          ],
+          "returnType": "List<Object>",
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "classes": [
+        {
+          "name": "EntityQueryWrapperImpl",
+          "methods": [
+            "query"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.orm.EntityMetaData",
+          "specifiers": [
+            "EntityMetaData"
+          ]
+        },
+        {
+          "source": "web.orm.SqlGenerate",
+          "specifiers": [
+            "SqlGenerate"
+          ]
+        },
+        {
+          "source": "web.orm.service.EntityQueryWrapper",
+          "specifiers": [
+            "EntityQueryWrapper"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Set",
+          "specifiers": [
+            "Set"
+          ]
+        }
+      ],
+      "exports": [
+        "query",
+        "EntityQueryWrapperImpl"
+      ],
+      "totalLines": 20,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/orm/service/impl/EntityUpdateWrapperImpl.java": {
+      "filePath": "src/main/java/web/orm/service/impl/EntityUpdateWrapperImpl.java",
+      "contentHash": "c1ea122a73da75e3d01d1caf539938fda64f01c39662068613e0d1879831fae0",
+      "functions": [
+        {
+          "name": "delete",
+          "params": [
+            "entityClass",
+            "condition"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "update",
+          "params": [
+            "entity",
+            "condition"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "insert",
+          "params": [
+            "entity"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [
+        {
+          "name": "EntityUpdateWrapperImpl",
+          "methods": [
+            "delete",
+            "update",
+            "insert"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 26
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.orm.EntityMetaData",
+          "specifiers": [
+            "EntityMetaData"
+          ]
+        },
+        {
+          "source": "web.orm.SqlGenerate",
+          "specifiers": [
+            "SqlGenerate"
+          ]
+        },
+        {
+          "source": "web.orm.annotation.Column",
+          "specifiers": [
+            "Column"
+          ]
+        },
+        {
+          "source": "web.orm.annotation.Id",
+          "specifiers": [
+            "Id"
+          ]
+        },
+        {
+          "source": "web.orm.annotation.Table",
+          "specifiers": [
+            "Table"
+          ]
+        },
+        {
+          "source": "web.orm.service.EntityUpdateWrapper",
+          "specifiers": [
+            "EntityUpdateWrapper"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Field",
+          "specifiers": [
+            "Field"
+          ]
+        },
+        {
+          "source": "java.util.LinkedHashMap",
+          "specifiers": [
+            "LinkedHashMap"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "delete",
+        "update",
+        "insert",
+        "EntityUpdateWrapperImpl"
+      ],
+      "totalLines": 40,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/RpcClient.java": {
+      "filePath": "src/main/java/web/rpc/RpcClient.java",
+      "contentHash": "a2d63def77199924765f3eae83086b7307cc8bd6cea7123dbbd0a8dc28da7295",
+      "functions": [
+        {
+          "name": "RpcClient",
+          "params": [
+            "host",
+            "port"
+          ],
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "run",
+          "params": [
+            "request"
+          ],
+          "returnType": "CompletableFuture<RpcResponce>",
+          "exported": true,
+          "lineCount": 22
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcClient",
+          "methods": [
+            "RpcClient",
+            "run"
+          ],
+          "properties": [
+            "port",
+            "host"
+          ],
+          "exported": true,
+          "lineCount": 30
+        }
+      ],
+      "imports": [
+        {
+          "source": "io.netty.bootstrap.Bootstrap",
+          "specifiers": [
+            "Bootstrap"
+          ]
+        },
+        {
+          "source": "io.netty.channel",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "io.netty.channel.nio.NioEventLoopGroup",
+          "specifiers": [
+            "NioEventLoopGroup"
+          ]
+        },
+        {
+          "source": "io.netty.channel.socket.SocketChannel",
+          "specifiers": [
+            "SocketChannel"
+          ]
+        },
+        {
+          "source": "io.netty.channel.socket.nio.NioSocketChannel",
+          "specifiers": [
+            "NioSocketChannel"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.LengthFieldBasedFrameDecoder",
+          "specifiers": [
+            "LengthFieldBasedFrameDecoder"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.LengthFieldPrepender",
+          "specifiers": [
+            "LengthFieldPrepender"
+          ]
+        },
+        {
+          "source": "web.rpc.handle.MyClientHandle",
+          "specifiers": [
+            "MyClientHandle"
+          ]
+        },
+        {
+          "source": "web.rpc.request.RpcRequest",
+          "specifiers": [
+            "RpcRequest"
+          ]
+        },
+        {
+          "source": "web.rpc.request.codec.RpcRequestEncoder",
+          "specifiers": [
+            "RpcRequestEncoder"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.RpcResponce",
+          "specifiers": [
+            "RpcResponce"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.codec.RpcResponceDecode",
+          "specifiers": [
+            "RpcResponceDecode"
+          ]
+        },
+        {
+          "source": "java.util.concurrent.CompletableFuture",
+          "specifiers": [
+            "CompletableFuture"
+          ]
+        }
+      ],
+      "exports": [
+        "RpcClient",
+        "run",
+        "RpcClient"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/RpcInvoke.java": {
+      "filePath": "src/main/java/web/rpc/RpcInvoke.java",
+      "contentHash": "a07f280e67e78c7c8f78b50e594ce249d94ad4eedfa70dc9f30b457a1a4231ec",
+      "functions": [
+        {
+          "name": "setBeans",
+          "params": [
+            "beans"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "invoke",
+          "params": [
+            "res"
+          ],
+          "returnType": "RpcResponce",
+          "exported": true,
+          "lineCount": 36
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcInvoke",
+          "methods": [
+            "setBeans",
+            "invoke"
+          ],
+          "properties": [
+            "beans"
+          ],
+          "exported": true,
+          "lineCount": 45
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.rpc.request.RpcRequest",
+          "specifiers": [
+            "RpcRequest"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.RpcResponce",
+          "specifiers": [
+            "RpcResponce"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.InvocationTargetException",
+          "specifiers": [
+            "InvocationTargetException"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        },
+        {
+          "source": "java.util.Arrays",
+          "specifiers": [
+            "Arrays"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "setBeans",
+        "invoke",
+        "RpcInvoke"
+      ],
+      "totalLines": 55,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/RpcServer.java": {
+      "filePath": "src/main/java/web/rpc/RpcServer.java",
+      "contentHash": "d434c6ea8be1b36774b55cba3016225e200be2067ad32599b876c4415665c921",
+      "functions": [
+        {
+          "name": "RpcServer",
+          "params": [
+            "port"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "run",
+          "params": [],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 27
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcServer",
+          "methods": [
+            "RpcServer",
+            "run"
+          ],
+          "properties": [
+            "port"
+          ],
+          "exported": true,
+          "lineCount": 33
+        }
+      ],
+      "imports": [
+        {
+          "source": "io.netty.bootstrap.ServerBootstrap",
+          "specifiers": [
+            "ServerBootstrap"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelFuture",
+          "specifiers": [
+            "ChannelFuture"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelInitializer",
+          "specifiers": [
+            "ChannelInitializer"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelOption",
+          "specifiers": [
+            "ChannelOption"
+          ]
+        },
+        {
+          "source": "io.netty.channel.EventLoopGroup",
+          "specifiers": [
+            "EventLoopGroup"
+          ]
+        },
+        {
+          "source": "io.netty.channel.nio.NioEventLoopGroup",
+          "specifiers": [
+            "NioEventLoopGroup"
+          ]
+        },
+        {
+          "source": "io.netty.channel.socket.SocketChannel",
+          "specifiers": [
+            "SocketChannel"
+          ]
+        },
+        {
+          "source": "io.netty.channel.socket.nio.NioServerSocketChannel",
+          "specifiers": [
+            "NioServerSocketChannel"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.LengthFieldBasedFrameDecoder",
+          "specifiers": [
+            "LengthFieldBasedFrameDecoder"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.LengthFieldPrepender",
+          "specifiers": [
+            "LengthFieldPrepender"
+          ]
+        },
+        {
+          "source": "web.rpc.handle.MyServerHandle",
+          "specifiers": [
+            "MyServerHandle"
+          ]
+        },
+        {
+          "source": "web.rpc.request.codec.RpcRequestDecoder",
+          "specifiers": [
+            "RpcRequestDecoder"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.codec.RpcResponceEncode",
+          "specifiers": [
+            "RpcResponceEncode"
+          ]
+        }
+      ],
+      "exports": [
+        "RpcServer",
+        "run",
+        "RpcServer"
+      ],
+      "totalLines": 50,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/ServiceRegistry.java": {
+      "filePath": "src/main/java/web/rpc/ServiceRegistry.java",
+      "contentHash": "19c43e774e07b7993dc63ee4871085b52378fb752699ea75c612fe9a55ec3a93",
+      "functions": [
+        {
+          "name": "ServiceRegistry",
+          "params": [],
+          "exported": true,
+          "lineCount": 2
+        },
+        {
+          "name": "ServiceRegistry",
+          "params": [
+            "beans"
+          ],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "ServiceRegistry",
+          "methods": [
+            "ServiceRegistry",
+            "ServiceRegistry"
+          ],
+          "properties": [
+            "services"
+          ],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.util.HashMap",
+          "specifiers": [
+            "HashMap"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "services",
+        "ServiceRegistry",
+        "ServiceRegistry",
+        "ServiceRegistry"
+      ],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/cglib/RpcProxy.java": {
+      "filePath": "src/main/java/web/rpc/cglib/RpcProxy.java",
+      "contentHash": "bfc06c38d4ce5b7fa436111388c981e4b2a3ad20baf97eddc779136ea4b2f982",
+      "functions": [
+        {
+          "name": "create",
+          "params": [
+            "aclass"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "create",
+          "params": [
+            "aclass",
+            "host",
+            "port"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcProxy",
+          "methods": [
+            "create",
+            "create"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 27
+        }
+      ],
+      "imports": [
+        {
+          "source": "net.sf.cglib.proxy.Enhancer",
+          "specifiers": [
+            "Enhancer"
+          ]
+        },
+        {
+          "source": "net.sf.cglib.proxy.MethodInterceptor",
+          "specifiers": [
+            "MethodInterceptor"
+          ]
+        },
+        {
+          "source": "net.sf.cglib.proxy.MethodProxy",
+          "specifiers": [
+            "MethodProxy"
+          ]
+        },
+        {
+          "source": "web.rpc.request.RpcRequest",
+          "specifiers": [
+            "RpcRequest"
+          ]
+        },
+        {
+          "source": "web.rpc.RpcClient",
+          "specifiers": [
+            "RpcClient"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.RpcResponce",
+          "specifiers": [
+            "RpcResponce"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        },
+        {
+          "source": "java.util.concurrent.TimeUnit",
+          "specifiers": [
+            "TimeUnit"
+          ]
+        }
+      ],
+      "exports": [
+        "create",
+        "create",
+        "RpcProxy"
+      ],
+      "totalLines": 40,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/exception/RpcUnFoundException.java": {
+      "filePath": "src/main/java/web/rpc/exception/RpcUnFoundException.java",
+      "contentHash": "59c1b7ee929a98e7d709e6b2716bf4403716cce8bb723e9257f2270114763a29",
+      "functions": [
+        {
+          "name": "RpcUnFoundException",
+          "params": [
+            "message"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcUnFoundException",
+          "methods": [
+            "RpcUnFoundException"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "RpcUnFoundException",
+        "RpcUnFoundException"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/handle/MyClientHandle.java": {
+      "filePath": "src/main/java/web/rpc/handle/MyClientHandle.java",
+      "contentHash": "cc6d711d09e3739b01fc674e4917e6f6599574c65a7500bbf4c361dd1f53eb86",
+      "functions": [
+        {
+          "name": "MyClientHandle",
+          "params": [
+            "request",
+            "future"
+          ],
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "channelActive",
+          "params": [
+            "ctx"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "channelRead",
+          "params": [
+            "ctx",
+            "msg"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "exceptionCaught",
+          "params": [
+            "ctx",
+            "cause"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "MyClientHandle",
+          "methods": [
+            "MyClientHandle",
+            "channelActive",
+            "channelRead",
+            "exceptionCaught"
+          ],
+          "properties": [
+            "future",
+            "request"
+          ],
+          "exported": true,
+          "lineCount": 26
+        }
+      ],
+      "imports": [
+        {
+          "source": "io.netty.channel.ChannelHandlerContext",
+          "specifiers": [
+            "ChannelHandlerContext"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelInboundHandlerAdapter",
+          "specifiers": [
+            "ChannelInboundHandlerAdapter"
+          ]
+        },
+        {
+          "source": "web.rpc.request.RpcRequest",
+          "specifiers": [
+            "RpcRequest"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.RpcResponce",
+          "specifiers": [
+            "RpcResponce"
+          ]
+        },
+        {
+          "source": "java.util.concurrent.CompletableFuture",
+          "specifiers": [
+            "CompletableFuture"
+          ]
+        }
+      ],
+      "exports": [
+        "MyClientHandle",
+        "channelActive",
+        "channelRead",
+        "exceptionCaught",
+        "MyClientHandle"
+      ],
+      "totalLines": 36,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/handle/MyServerHandle.java": {
+      "filePath": "src/main/java/web/rpc/handle/MyServerHandle.java",
+      "contentHash": "ea325140a9c44d6780b9c59eb70c41b91a235381d6071bbc1b7de8e599cd7ef8",
+      "functions": [
+        {
+          "name": "channelRead",
+          "params": [
+            "ctx",
+            "msg"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "MyServerHandle",
+          "methods": [
+            "channelRead"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "imports": [
+        {
+          "source": "io.netty.channel.ChannelHandlerContext",
+          "specifiers": [
+            "ChannelHandlerContext"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelInboundHandlerAdapter",
+          "specifiers": [
+            "ChannelInboundHandlerAdapter"
+          ]
+        },
+        {
+          "source": "web.rpc.RpcInvoke",
+          "specifiers": [
+            "RpcInvoke"
+          ]
+        },
+        {
+          "source": "web.rpc.request.RpcRequest",
+          "specifiers": [
+            "RpcRequest"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.RpcResponce",
+          "specifiers": [
+            "RpcResponce"
+          ]
+        }
+      ],
+      "exports": [
+        "channelRead",
+        "MyServerHandle"
+      ],
+      "totalLines": 16,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/request/RpcRequest.java": {
+      "filePath": "src/main/java/web/rpc/request/RpcRequest.java",
+      "contentHash": "1491b23eb7fe7659023e222f9d7e6a673070a7657de931daefa648fc18a36e0d",
+      "functions": [
+        {
+          "name": "RpcRequest",
+          "params": [
+            "interfaceName",
+            "methodName",
+            "parameterTypes",
+            "arguments"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "getInterfaceName",
+          "params": [],
+          "returnType": "String",
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "getMethodName",
+          "params": [],
+          "returnType": "String",
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "getParameterTypes",
+          "params": [],
+          "returnType": "Class<?>[]",
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "getArguments",
+          "params": [],
+          "returnType": "Object[]",
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcRequest",
+          "methods": [
+            "RpcRequest",
+            "getInterfaceName",
+            "getMethodName",
+            "getParameterTypes",
+            "getArguments"
+          ],
+          "properties": [
+            "serialVersionUID",
+            "interfaceName",
+            "methodName",
+            "parameterTypes",
+            "arguments"
+          ],
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.io.Serial",
+          "specifiers": [
+            "Serial"
+          ]
+        },
+        {
+          "source": "java.io.Serializable",
+          "specifiers": [
+            "Serializable"
+          ]
+        }
+      ],
+      "exports": [
+        "RpcRequest",
+        "getInterfaceName",
+        "getMethodName",
+        "getParameterTypes",
+        "getArguments",
+        "RpcRequest"
+      ],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/request/codec/RpcRequestDecoder.java": {
+      "filePath": "src/main/java/web/rpc/request/codec/RpcRequestDecoder.java",
+      "contentHash": "63ec285651aa39cb9c23b71cc3557be23955cabc3d3c52ac1dbeec9b488ecf7b",
+      "functions": [
+        {
+          "name": "decode",
+          "params": [
+            "ctx",
+            "in",
+            "out"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "readString",
+          "params": [
+            "in"
+          ],
+          "returnType": "String",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "resolveClass",
+          "params": [
+            "name"
+          ],
+          "returnType": "Class<?>",
+          "exported": false,
+          "lineCount": 13
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcRequestDecoder",
+          "methods": [
+            "decode",
+            "readString",
+            "resolveClass"
+          ],
+          "properties": [
+            "objectMapper"
+          ],
+          "exported": true,
+          "lineCount": 42
+        }
+      ],
+      "imports": [
+        {
+          "source": "com.fasterxml.jackson.databind.ObjectMapper",
+          "specifiers": [
+            "ObjectMapper"
+          ]
+        },
+        {
+          "source": "io.netty.buffer.ByteBuf",
+          "specifiers": [
+            "ByteBuf"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelHandlerContext",
+          "specifiers": [
+            "ChannelHandlerContext"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.ByteToMessageDecoder",
+          "specifiers": [
+            "ByteToMessageDecoder"
+          ]
+        },
+        {
+          "source": "web.rpc.request.RpcRequest",
+          "specifiers": [
+            "RpcRequest"
+          ]
+        },
+        {
+          "source": "java.nio.charset.StandardCharsets",
+          "specifiers": [
+            "StandardCharsets"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "RpcRequestDecoder"
+      ],
+      "totalLines": 54,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/request/codec/RpcRequestEncoder.java": {
+      "filePath": "src/main/java/web/rpc/request/codec/RpcRequestEncoder.java",
+      "contentHash": "2c096c113446248079145393c63a880c3d0c157221efa06184f06d8aca7abe3b",
+      "functions": [
+        {
+          "name": "encode",
+          "params": [
+            "ctx",
+            "request",
+            "out"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 16
+        },
+        {
+          "name": "writeString",
+          "params": [
+            "out",
+            "value"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcRequestEncoder",
+          "methods": [
+            "encode",
+            "writeString"
+          ],
+          "properties": [
+            "objectMapper"
+          ],
+          "exported": true,
+          "lineCount": 26
+        }
+      ],
+      "imports": [
+        {
+          "source": "com.fasterxml.jackson.databind.ObjectMapper",
+          "specifiers": [
+            "ObjectMapper"
+          ]
+        },
+        {
+          "source": "io.netty.buffer.ByteBuf",
+          "specifiers": [
+            "ByteBuf"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelHandlerContext",
+          "specifiers": [
+            "ChannelHandlerContext"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.MessageToByteEncoder",
+          "specifiers": [
+            "MessageToByteEncoder"
+          ]
+        },
+        {
+          "source": "web.rpc.request.RpcRequest",
+          "specifiers": [
+            "RpcRequest"
+          ]
+        },
+        {
+          "source": "java.nio.charset.StandardCharsets",
+          "specifiers": [
+            "StandardCharsets"
+          ]
+        }
+      ],
+      "exports": [
+        "RpcRequestEncoder"
+      ],
+      "totalLines": 37,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/responce/RpcResponce.java": {
+      "filePath": "src/main/java/web/rpc/responce/RpcResponce.java",
+      "contentHash": "a3e0ccaad063a8534091af82eda84a1adff442b192d464188176a84fa5315f4c",
+      "functions": [
+        {
+          "name": "RpcResponce",
+          "params": [
+            "success",
+            "data",
+            "errorMessage"
+          ],
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "getSuccess",
+          "params": [],
+          "returnType": "Boolean",
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "getData",
+          "params": [],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "getErrorMessage",
+          "params": [],
+          "returnType": "String",
+          "exported": true,
+          "lineCount": 1
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcResponce",
+          "methods": [
+            "RpcResponce",
+            "getSuccess",
+            "getData",
+            "getErrorMessage"
+          ],
+          "properties": [
+            "serialVersionUID",
+            "success",
+            "data",
+            "errorMessage"
+          ],
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.io.Serial",
+          "specifiers": [
+            "Serial"
+          ]
+        },
+        {
+          "source": "java.io.Serializable",
+          "specifiers": [
+            "Serializable"
+          ]
+        }
+      ],
+      "exports": [
+        "RpcResponce",
+        "getSuccess",
+        "getData",
+        "getErrorMessage",
+        "RpcResponce"
+      ],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/responce/codec/RpcResponceDecode.java": {
+      "filePath": "src/main/java/web/rpc/responce/codec/RpcResponceDecode.java",
+      "contentHash": "403648948a1de1db963d9bebfcd61bd9b312a33a42f7c127bb21094972fa1812",
+      "functions": [
+        {
+          "name": "decode",
+          "params": [
+            "ctx",
+            "in",
+            "out"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "readString",
+          "params": [
+            "in"
+          ],
+          "returnType": "String",
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "resolveClass",
+          "params": [
+            "type"
+          ],
+          "returnType": "Class<?>",
+          "exported": false,
+          "lineCount": 13
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcResponceDecode",
+          "methods": [
+            "decode",
+            "readString",
+            "resolveClass"
+          ],
+          "properties": [
+            "objectMapper"
+          ],
+          "exported": true,
+          "lineCount": 40
+        }
+      ],
+      "imports": [
+        {
+          "source": "com.fasterxml.jackson.databind.ObjectMapper",
+          "specifiers": [
+            "ObjectMapper"
+          ]
+        },
+        {
+          "source": "io.netty.buffer.ByteBuf",
+          "specifiers": [
+            "ByteBuf"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelHandlerContext",
+          "specifiers": [
+            "ChannelHandlerContext"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.ByteToMessageDecoder",
+          "specifiers": [
+            "ByteToMessageDecoder"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.RpcResponce",
+          "specifiers": [
+            "RpcResponce"
+          ]
+        },
+        {
+          "source": "java.nio.charset.StandardCharsets",
+          "specifiers": [
+            "StandardCharsets"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "RpcResponceDecode"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/rpc/responce/codec/RpcResponceEncode.java": {
+      "filePath": "src/main/java/web/rpc/responce/codec/RpcResponceEncode.java",
+      "contentHash": "9c8356971c50791ef3890a4f51ecadc274cb89a08eb63866c7c80645ee3a7173",
+      "functions": [
+        {
+          "name": "encode",
+          "params": [
+            "ctx",
+            "response",
+            "out"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "writeString",
+          "params": [
+            "out",
+            "value"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "RpcResponceEncode",
+          "methods": [
+            "encode",
+            "writeString"
+          ],
+          "properties": [
+            "objectMapper"
+          ],
+          "exported": true,
+          "lineCount": 21
+        }
+      ],
+      "imports": [
+        {
+          "source": "com.fasterxml.jackson.databind.ObjectMapper",
+          "specifiers": [
+            "ObjectMapper"
+          ]
+        },
+        {
+          "source": "io.netty.buffer.ByteBuf",
+          "specifiers": [
+            "ByteBuf"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelHandlerContext",
+          "specifiers": [
+            "ChannelHandlerContext"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.MessageToByteEncoder",
+          "specifiers": [
+            "MessageToByteEncoder"
+          ]
+        },
+        {
+          "source": "web.rpc.responce.RpcResponce",
+          "specifiers": [
+            "RpcResponce"
+          ]
+        },
+        {
+          "source": "java.nio.charset.StandardCharsets",
+          "specifiers": [
+            "StandardCharsets"
+          ]
+        }
+      ],
+      "exports": [
+        "RpcResponceEncode"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/server/HttpRequestHandler.java": {
+      "filePath": "src/main/java/web/server/HttpRequestHandler.java",
+      "contentHash": "11e3f709b973d1b2c3628d21de845d2a27910068cfac8a60642d4e79d7398e18",
+      "functions": [
+        {
+          "name": "HttpRequestHandler",
+          "params": [
+            "dispatcher"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "channelReadComplete",
+          "params": [
+            "ctx"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "channelRead0",
+          "params": [
+            "chc",
+            "req"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 43
+        },
+        {
+          "name": "exceptionCaught",
+          "params": [
+            "ctx",
+            "cause"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "HttpRequestHandler",
+          "methods": [
+            "HttpRequestHandler",
+            "channelReadComplete",
+            "channelRead0",
+            "exceptionCaught"
+          ],
+          "properties": [
+            "FAVICON_ICO",
+            "CONNECTION",
+            "KEEP_ALIVE",
+            "dispatcher"
+          ],
+          "exported": true,
+          "lineCount": 65
+        }
+      ],
+      "imports": [
+        {
+          "source": "io.netty.buffer.Unpooled",
+          "specifiers": [
+            "Unpooled"
+          ]
+        },
+        {
+          "source": "io.netty.channel",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.http",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "io.netty.util.AsciiString",
+          "specifiers": [
+            "AsciiString"
+          ]
+        },
+        {
+          "source": "io.netty.util.CharsetUtil",
+          "specifiers": [
+            "CharsetUtil"
+          ]
+        },
+        {
+          "source": "web.mvc.exception.NotFoundException",
+          "specifiers": [
+            "NotFoundException"
+          ]
+        },
+        {
+          "source": "web.mvc.Dispatcher",
+          "specifiers": [
+            "Dispatcher"
+          ]
+        },
+        {
+          "source": "web.mvc.annotation.RequestMethod",
+          "specifiers": [
+            "RequestMethod"
+          ]
+        },
+        {
+          "source": "web.mvc.exception.BadRequestException",
+          "specifiers": [
+            "BadRequestException"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.http.HttpUtil.getContentLength",
+          "specifiers": [
+            "getContentLength"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.http.HttpUtil.is100ContinueExpected",
+          "specifiers": [
+            "is100ContinueExpected"
+          ]
+        }
+      ],
+      "exports": [
+        "HttpRequestHandler",
+        "channelReadComplete",
+        "exceptionCaught",
+        "HttpRequestHandler"
+      ],
+      "totalLines": 83,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/server/HttpServer.java": {
+      "filePath": "src/main/java/web/server/HttpServer.java",
+      "contentHash": "921159eeb1fadd72a580e86eea0f158310565ee2584077597124e4271fb14316",
+      "functions": [
+        {
+          "name": "HttpServer",
+          "params": [
+            "port",
+            "dispatcher"
+          ],
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "start",
+          "params": [],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 30
+        }
+      ],
+      "classes": [
+        {
+          "name": "HttpServer",
+          "methods": [
+            "HttpServer",
+            "start"
+          ],
+          "properties": [
+            "port",
+            "dispatcher"
+          ],
+          "exported": true,
+          "lineCount": 47
+        }
+      ],
+      "imports": [
+        {
+          "source": "io.netty.bootstrap.ServerBootstrap",
+          "specifiers": [
+            "ServerBootstrap"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelFuture",
+          "specifiers": [
+            "ChannelFuture"
+          ]
+        },
+        {
+          "source": "io.netty.channel.nio.NioEventLoopGroup",
+          "specifiers": [
+            "NioEventLoopGroup"
+          ]
+        },
+        {
+          "source": "io.netty.channel.socket.nio.NioServerSocketChannel",
+          "specifiers": [
+            "NioServerSocketChannel"
+          ]
+        },
+        {
+          "source": "io.netty.handler.logging.LogLevel",
+          "specifiers": [
+            "LogLevel"
+          ]
+        },
+        {
+          "source": "io.netty.handler.logging.LoggingHandler",
+          "specifiers": [
+            "LoggingHandler"
+          ]
+        },
+        {
+          "source": "web.mvc.Dispatcher",
+          "specifiers": [
+            "Dispatcher"
+          ]
+        },
+        {
+          "source": "java.net.InetSocketAddress",
+          "specifiers": [
+            "InetSocketAddress"
+          ]
+        }
+      ],
+      "exports": [
+        "HttpServer",
+        "start",
+        "HttpServer"
+      ],
+      "totalLines": 60,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/server/HttpServerInitializer.java": {
+      "filePath": "src/main/java/web/server/HttpServerInitializer.java",
+      "contentHash": "bda45db0b53f4a5325f4095d6557aadac1c3a8a55427a652cd47a29c54db0c49",
+      "functions": [
+        {
+          "name": "HttpServerInitializer",
+          "params": [
+            "dispatcher"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "initChannel",
+          "params": [
+            "socketChannel"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 11
+        }
+      ],
+      "classes": [
+        {
+          "name": "HttpServerInitializer",
+          "methods": [
+            "HttpServerInitializer",
+            "initChannel"
+          ],
+          "properties": [
+            "dispatcher"
+          ],
+          "exported": true,
+          "lineCount": 19
+        }
+      ],
+      "imports": [
+        {
+          "source": "io.netty.channel.ChannelInitializer",
+          "specifiers": [
+            "ChannelInitializer"
+          ]
+        },
+        {
+          "source": "io.netty.channel.ChannelPipeline",
+          "specifiers": [
+            "ChannelPipeline"
+          ]
+        },
+        {
+          "source": "io.netty.channel.socket.SocketChannel",
+          "specifiers": [
+            "SocketChannel"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.http.HttpObjectAggregator",
+          "specifiers": [
+            "HttpObjectAggregator"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.http.HttpServerCodec",
+          "specifiers": [
+            "HttpServerCodec"
+          ]
+        },
+        {
+          "source": "web.mvc.Dispatcher",
+          "specifiers": [
+            "Dispatcher"
+          ]
+        }
+      ],
+      "exports": [
+        "HttpServerInitializer",
+        "HttpServerInitializer"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/server/WebResponse.java": {
+      "filePath": "src/main/java/web/server/WebResponse.java",
+      "contentHash": "f97c9101f8a20e2050413c8c47e2c34e367970999089b48c45341a2074dbca26",
+      "functions": [
+        {
+          "name": "ok",
+          "params": [
+            "content"
+          ],
+          "returnType": "FullHttpResponse",
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "classes": [
+        {
+          "name": "WebResponse",
+          "methods": [
+            "ok"
+          ],
+          "properties": [
+            "mapper"
+          ],
+          "exported": true,
+          "lineCount": 14
+        }
+      ],
+      "imports": [
+        {
+          "source": "com.fasterxml.jackson.core.JsonProcessingException",
+          "specifiers": [
+            "JsonProcessingException"
+          ]
+        },
+        {
+          "source": "com.fasterxml.jackson.databind.ObjectMapper",
+          "specifiers": [
+            "ObjectMapper"
+          ]
+        },
+        {
+          "source": "io.netty.buffer.Unpooled",
+          "specifiers": [
+            "Unpooled"
+          ]
+        },
+        {
+          "source": "io.netty.handler.codec.http",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "java.nio.charset.StandardCharsets",
+          "specifiers": [
+            "StandardCharsets"
+          ]
+        }
+      ],
+      "exports": [
+        "ok",
+        "WebResponse"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "src/test/java/web/ServerTest.java": {
+      "filePath": "src/test/java/web/ServerTest.java",
+      "contentHash": "b36f2a299eefa56091e1ff08bfe43c2e65607d0dcb810dbf8c0800ef6936a529",
+      "functions": [
+        {
+          "name": "classScanTest",
+          "params": [],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "classes": [
+        {
+          "name": "ServerTest",
+          "methods": [
+            "classScanTest"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 6
+        }
+      ],
+      "imports": [
+        {
+          "source": "org.junit.jupiter.api.Test",
+          "specifiers": [
+            "Test"
+          ]
+        },
+        {
+          "source": "web.core.ClassScanner",
+          "specifiers": [
+            "ClassScanner"
+          ]
+        }
+      ],
+      "exports": [
+        "classScanTest",
+        "ServerTest"
+      ],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "srv_err.txt": {
+      "filePath": "srv_err.txt",
+      "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 1,
+      "hasStructuralAnalysis": false
+    },
+    "srv_out.txt": {
+      "filePath": "srv_out.txt",
+      "contentHash": "8db37b768a5909744c5b0d4f4a4bcb92a442e193f1691ab67de30e7a1504c299",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 4,
+      "hasStructuralAnalysis": false
+    }
+  }
+}
