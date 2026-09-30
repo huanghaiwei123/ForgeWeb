@@ -1,0 +1,1658 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [
+    "witch -c recover-ioc"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 8,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 8,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/main/java/web/ApplicationServer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "run",
+          "startLine": 11,
+          "endLine": 28,
+          "params": [
+            "primaryClass"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApplicationServer",
+          "startLine": 10,
+          "endLine": 29,
+          "methods": [
+            "run"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "run",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "ApplicationServer",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "run",
+          "callee": "primaryClass.getPackage().getName",
+          "lineNumber": 12
+        },
+        {
+          "caller": "run",
+          "callee": "primaryClass.getPackage",
+          "lineNumber": 12
+        },
+        {
+          "caller": "run",
+          "callee": "new AnnotationConfigApplicationContext",
+          "lineNumber": 14
+        },
+        {
+          "caller": "run",
+          "callee": "new HandleMapping",
+          "lineNumber": 16
+        },
+        {
+          "caller": "run",
+          "callee": "context.getBeans",
+          "lineNumber": 17
+        },
+        {
+          "caller": "run",
+          "callee": "handleMapping.register",
+          "lineNumber": 18
+        },
+        {
+          "caller": "run",
+          "callee": "TypeConverter.setBeans",
+          "lineNumber": 19
+        },
+        {
+          "caller": "run",
+          "callee": "new Dispatcher",
+          "lineNumber": 21
+        },
+        {
+          "caller": "run",
+          "callee": "new HttpServer",
+          "lineNumber": 22
+        },
+        {
+          "caller": "run",
+          "callee": "httpServer.start",
+          "lineNumber": 24
+        },
+        {
+          "caller": "run",
+          "callee": "new RuntimeException",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/web/aop/AopProxy.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 74,
+      "functions": [
+        {
+          "name": "AopProxy",
+          "startLine": 20,
+          "endLine": 22,
+          "params": [
+            "aspects"
+          ]
+        },
+        {
+          "name": "createProxy",
+          "startLine": 26,
+          "endLine": 80,
+          "params": [
+            "target"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AopProxy",
+          "startLine": 16,
+          "endLine": 82,
+          "methods": [
+            "AopProxy",
+            "createProxy"
+          ],
+          "properties": [
+            "aspects"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AopProxy",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "createProxy",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "AopProxy",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createProxy",
+          "callee": "new Enhancer",
+          "lineNumber": 27
+        },
+        {
+          "caller": "createProxy",
+          "callee": "enhancer.setSuperclass",
+          "lineNumber": 28
+        },
+        {
+          "caller": "createProxy",
+          "callee": "target.getClass",
+          "lineNumber": 28
+        },
+        {
+          "caller": "createProxy",
+          "callee": "enhancer.setCallback",
+          "lineNumber": 36
+        },
+        {
+          "caller": "createProxy",
+          "callee": "new LinkedList<>",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aspect.getClass().getDeclaredMethods",
+          "lineNumber": 40
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aspect.getClass",
+          "lineNumber": 40
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.setAccessible",
+          "lineNumber": 41
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.isAnnotationPresent",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createProxy",
+          "callee": "PointcutMatcher.matches",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.getAnnotation(Before.class).value",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.getAnnotation",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createProxy",
+          "callee": "target.getClass",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.invoke",
+          "lineNumber": 43
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.isAnnotationPresent",
+          "lineNumber": 45
+        },
+        {
+          "caller": "createProxy",
+          "callee": "PointcutMatcher.matches",
+          "lineNumber": 45
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.getAnnotation(Around.class).value",
+          "lineNumber": 45
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.getAnnotation",
+          "lineNumber": 45
+        },
+        {
+          "caller": "createProxy",
+          "callee": "target.getClass",
+          "lineNumber": 45
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aroundAdvices.add",
+          "lineNumber": 46
+        },
+        {
+          "caller": "createProxy",
+          "callee": "proxy.invokeSuper",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aroundAdvices.size",
+          "lineNumber": 55
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aroundAdvices.get",
+          "lineNumber": 56
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aroundAdvices.get",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createProxy",
+          "callee": "new ProceedingJoinPoint",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aspectMethod.invoke",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createProxy",
+          "callee": "chain.proceed",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aspect.getClass().getDeclaredMethods",
+          "lineNumber": 68
+        },
+        {
+          "caller": "createProxy",
+          "callee": "aspect.getClass",
+          "lineNumber": 68
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.setAccessible",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.isAnnotationPresent",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createProxy",
+          "callee": "PointcutMatcher.matches",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.getAnnotation(After.class).value",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.getAnnotation",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createProxy",
+          "callee": "target.getClass",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createProxy",
+          "callee": "ignored.invoke",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createProxy",
+          "callee": "enhancer.create",
+          "lineNumber": 79
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/web/aop/AspectRegistry.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "AspectRegistry",
+          "startLine": 10,
+          "endLine": 12,
+          "params": [
+            "aspects"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AspectRegistry",
+          "startLine": 7,
+          "endLine": 13,
+          "methods": [
+            "AspectRegistry"
+          ],
+          "properties": [
+            "aspects"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AspectRegistry",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "AspectRegistry",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/web/aop/Proceeding.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "Proceeding",
+          "startLine": 2,
+          "endLine": 5,
+          "methods": [
+            "proceed"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "Proceeding",
+          "line": 2,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/web/aop/ProceedingJoinPoint.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "ProceedingJoinPoint",
+          "startLine": 14,
+          "endLine": 18,
+          "params": [
+            "method",
+            "args",
+            "next"
+          ]
+        },
+        {
+          "name": "proceed",
+          "startLine": 19,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProceedingJoinPoint",
+          "startLine": 7,
+          "endLine": 23,
+          "methods": [
+            "ProceedingJoinPoint",
+            "proceed"
+          ],
+          "properties": [
+            "method",
+            "args",
+            "next"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ProceedingJoinPoint",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "proceed",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "ProceedingJoinPoint",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "proceed",
+          "callee": "next.proceed",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 90,
+      "nonEmptyLines": 79,
+      "functions": [
+        {
+          "name": "AnnotationConfigApplicationContext",
+          "startLine": 20,
+          "endLine": 25,
+          "params": [
+            "packageName"
+          ]
+        },
+        {
+          "name": "registerScanForRpc",
+          "startLine": 27,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "getBeans",
+          "startLine": 34,
+          "endLine": 37,
+          "params": [
+            "scan"
+          ]
+        },
+        {
+          "name": "getBeanFactory",
+          "startLine": 39,
+          "endLine": 45,
+          "params": [
+            "scan"
+          ]
+        },
+        {
+          "name": "getBeans",
+          "startLine": 47,
+          "endLine": 49,
+          "params": []
+        },
+        {
+          "name": "injectDependence",
+          "startLine": 51,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "getAllFields",
+          "startLine": 72,
+          "endLine": 80,
+          "params": [
+            "aClass"
+          ]
+        },
+        {
+          "name": "getFieldDependence",
+          "startLine": 87,
+          "endLine": 89,
+          "params": [
+            "type"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AnnotationConfigApplicationContext",
+          "startLine": 16,
+          "endLine": 90,
+          "methods": [
+            "AnnotationConfigApplicationContext",
+            "registerScanForRpc",
+            "getBeans",
+            "getBeanFactory",
+            "getBeans",
+            "injectDependence",
+            "getAllFields",
+            "getFieldDependence"
+          ],
+          "properties": [
+            "scan",
+            "beans",
+            "beanFactory"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AnnotationConfigApplicationContext",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "getBeans",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "AnnotationConfigApplicationContext",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AnnotationConfigApplicationContext",
+          "callee": "ClassScanner.scan",
+          "lineNumber": 21
+        },
+        {
+          "caller": "AnnotationConfigApplicationContext",
+          "callee": "getBeans",
+          "lineNumber": 22
+        },
+        {
+          "caller": "AnnotationConfigApplicationContext",
+          "callee": "injectDependence",
+          "lineNumber": 23
+        },
+        {
+          "caller": "AnnotationConfigApplicationContext",
+          "callee": "registerScanForRpc",
+          "lineNumber": 24
+        },
+        {
+          "caller": "registerScanForRpc",
+          "callee": "beans.values().stream().toList",
+          "lineNumber": 28
+        },
+        {
+          "caller": "registerScanForRpc",
+          "callee": "beans.values().stream",
+          "lineNumber": 28
+        },
+        {
+          "caller": "registerScanForRpc",
+          "callee": "beans.values",
+          "lineNumber": 28
+        },
+        {
+          "caller": "registerScanForRpc",
+          "callee": "new ServiceRegistry",
+          "lineNumber": 29
+        },
+        {
+          "caller": "registerScanForRpc",
+          "callee": "RpcInvoke.setBeans",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getBeans",
+          "callee": "getBeanFactory",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getBeans",
+          "callee": "beanFactory.getBeans",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getBeanFactory",
+          "callee": "new BeanDefinitionReader",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getBeanFactory",
+          "callee": "reader.parseClass",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getBeanFactory",
+          "callee": "reader.parseForAspect",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getBeanFactory",
+          "callee": "new DefaultBeanFactory",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getBeanFactory",
+          "callee": "registry.getBeanDefinitions",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getBeanFactory",
+          "callee": "aspectRegistry.getAspects",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getBeans",
+          "callee": "beans.values().stream().toList",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getBeans",
+          "callee": "beans.values().stream",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getBeans",
+          "callee": "beans.values",
+          "lineNumber": 48
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "beans.values",
+          "lineNumber": 52
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "getAllFields",
+          "lineNumber": 53
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "bean.getClass",
+          "lineNumber": 53
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "field.isAnnotationPresent",
+          "lineNumber": 54
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "getFieldDependence",
+          "lineNumber": 55
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "field.getType",
+          "lineNumber": 55
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "new RuntimeException",
+          "lineNumber": 57
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "field.getType().getName",
+          "lineNumber": 57
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "field.getType",
+          "lineNumber": 57
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "bean.getClass().getName",
+          "lineNumber": 58
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "bean.getClass",
+          "lineNumber": 58
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "field.getName",
+          "lineNumber": 58
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "field.setAccessible",
+          "lineNumber": 60
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "field.set",
+          "lineNumber": 62
+        },
+        {
+          "caller": "injectDependence",
+          "callee": "new RuntimeException",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getAllFields",
+          "callee": "new ArrayList<>",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getAllFields",
+          "callee": "Object.class.isAssignableFrom",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getAllFields",
+          "callee": "aClass.getDeclaredFields",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getAllFields",
+          "callee": "list.addAll",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getAllFields",
+          "callee": "Arrays.stream(fields).toList",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getAllFields",
+          "callee": "Arrays.stream",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getAllFields",
+          "callee": "aClass.getSuperclass",
+          "lineNumber": 77
+        },
+        {
+          "caller": "getFieldDependence",
+          "callee": "beanFactory.getBean",
+          "lineNumber": 88
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 3,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 159,
+      "nonEmptyLines": 140,
+      "functions": [
+        {
+          "name": "DefaultBeanFactory",
+          "startLine": 30,
+          "endLine": 55,
+          "params": [
+            "definitions",
+            "aspects"
+          ]
+        },
+        {
+          "name": "getBean",
+          "startLine": 63,
+          "endLine": 84,
+          "params": [
+            "beanName"
+          ]
+        },
+        {
+          "name": "getBean",
+          "startLine": 86,
+          "endLine": 99,
+          "params": [
+            "beanName",
+            "requiredType"
+          ]
+        },
+        {
+          "name": "getBean",
+          "startLine": 101,
+          "endLine": 131,
+          "params": [
+            "requiredType"
+          ]
+        },
+        {
+          "name": "getBeans",
+          "startLine": 133,
+          "endLine": 136,
+          "params": []
+        },
+        {
+          "name": "containsBean",
+          "startLine": 138,
+          "endLine": 141,
+          "params": [
+            "beanName"
+          ]
+        },
+        {
+          "name": "isSingleton",
+          "startLine": 143,
+          "endLine": 149,
+          "params": [
+            "beanName"
+          ]
+        },
+        {
+          "name": "isPrototype",
+          "startLine": 151,
+          "endLine": 157,
+          "params": [
+            "beanName"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DefaultBeanFactory",
+          "startLine": 15,
+          "endLine": 159,
+          "methods": [
+            "DefaultBeanFactory",
+            "getBean",
+            "getBean",
+            "getBean",
+            "getBeans",
+            "containsBean",
+            "isSingleton",
+            "isPrototype"
+          ],
+          "properties": [
+            "beans",
+            "singletonBeans",
+            "beanWithDefinition",
+            "aspects",
+            "singletonBeanRegistry",
+            "om"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DefaultBeanFactory",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getBean",
+          "line": 63,
+          "isDefault": false
+        },
+        {
+          "name": "getBean",
+          "line": 86,
+          "isDefault": false
+        },
+        {
+          "name": "getBean",
+          "line": 101,
+          "isDefault": false
+        },
+        {
+          "name": "getBeans",
+          "line": 133,
+          "isDefault": false
+        },
+        {
+          "name": "containsBean",
+          "line": 138,
+          "isDefault": false
+        },
+        {
+          "name": "isSingleton",
+          "line": 143,
+          "isDefault": false
+        },
+        {
+          "name": "isPrototype",
+          "line": 151,
+          "isDefault": false
+        },
+        {
+          "name": "DefaultBeanFactory",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "definition.getBeanName",
+          "lineNumber": 33
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "definition.getBeanClass",
+          "lineNumber": 34
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "definition.getIsNeedProxy",
+          "lineNumber": 35
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "definition.getScopeEnum",
+          "lineNumber": 36
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "aClass.getSimpleName",
+          "lineNumber": 37
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "Class.forName(beanName).getDeclaredConstructor().newInstance",
+          "lineNumber": 39
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "Class.forName(beanName).getDeclaredConstructor",
+          "lineNumber": 39
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "Class.forName",
+          "lineNumber": 39
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "new AopProxy",
+          "lineNumber": 41
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "aopProxy.createProxy",
+          "lineNumber": 42
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "singletonBeans.put",
+          "lineNumber": 45
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "beans.put",
+          "lineNumber": 47
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "beanWithDefinition.put",
+          "lineNumber": 48
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "new RuntimeException",
+          "lineNumber": 51
+        },
+        {
+          "caller": "DefaultBeanFactory",
+          "callee": "new SingletonBeanRegistry",
+          "lineNumber": 54
+        },
+        {
+          "caller": "getBean",
+          "callee": "beans.get",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getBean",
+          "callee": "new NoSuchBeanException",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getBean",
+          "callee": "beanWithDefinition.get",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getBean",
+          "callee": "definition.getIsNeedProxy",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getBean",
+          "callee": "isPrototype",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getBean",
+          "callee": "bean.getClass().getDeclaredConstructor().newInstance",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getBean",
+          "callee": "bean.getClass().getDeclaredConstructor",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getBean",
+          "callee": "bean.getClass",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getBean",
+          "callee": "new RuntimeException",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getBean",
+          "callee": "new AopProxy(aspects).createProxy",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getBean",
+          "callee": "new AopProxy",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getBean",
+          "callee": "getBean",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getBean",
+          "callee": "getBean",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getBean",
+          "callee": "getBean",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getBean",
+          "callee": "beanWithDefinition.get",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getBean",
+          "callee": "definition.getIsNeedProxy",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getBean",
+          "callee": "new AopProxy(aspects).createProxy",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getBean",
+          "callee": "new AopProxy",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getBean",
+          "callee": "beans.values",
+          "lineNumber": 103
+        },
+        {
+          "caller": "getBean",
+          "callee": "new ArrayList<>",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getBean",
+          "callee": "requiredType.isAssignableFrom",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getBean",
+          "callee": "value.getClass",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getBean",
+          "callee": "beans.add",
+          "lineNumber": 107
+        },
+        {
+          "caller": "getBean",
+          "callee": "beans.isEmpty",
+          "lineNumber": 110
+        },
+        {
+          "caller": "getBean",
+          "callee": "new NoSuchBeanException",
+          "lineNumber": 111
+        },
+        {
+          "caller": "getBean",
+          "callee": "requiredType.getName",
+          "lineNumber": 111
+        },
+        {
+          "caller": "getBean",
+          "callee": "beans.size",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getBean",
+          "callee": "new NoUniqueBeanException",
+          "lineNumber": 113
+        },
+        {
+          "caller": "getBean",
+          "callee": "requiredType.getName",
+          "lineNumber": 113
+        },
+        {
+          "caller": "getBean",
+          "callee": "beans.get",
+          "lineNumber": 115
+        },
+        {
+          "caller": "getBean",
+          "callee": "isPrototype",
+          "lineNumber": 116
+        },
+        {
+          "caller": "getBean",
+          "callee": "requiredType.getName",
+          "lineNumber": 116
+        },
+        {
+          "caller": "getBean",
+          "callee": "requiredType.getDeclaredConstructor().newInstance",
+          "lineNumber": 118
+        },
+        {
+          "caller": "getBean",
+          "callee": "requiredType.getDeclaredConstructor",
+          "lineNumber": 118
+        },
+        {
+          "caller": "getBean",
+          "callee": "new RuntimeException",
+          "lineNumber": 121
+        },
+        {
+          "caller": "getBean",
+          "callee": "beanWithDefinition.get",
+          "lineNumber": 124
+        },
+        {
+          "caller": "getBean",
+          "callee": "definition.getIsNeedProxy",
+          "lineNumber": 125
+        },
+        {
+          "caller": "getBean",
+          "callee": "new AopProxy(aspects).createProxy",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getBean",
+          "callee": "new AopProxy",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getBeans",
+          "callee": "Map.copyOf",
+          "lineNumber": 135
+        },
+        {
+          "caller": "containsBean",
+          "callee": "beans.containsKey",
+          "lineNumber": 140
+        },
+        {
+          "caller": "isSingleton",
+          "callee": "beans.get",
+          "lineNumber": 145
+        },
+        {
+          "caller": "isSingleton",
+          "callee": "new NoSuchBeanException",
+          "lineNumber": 146
+        },
+        {
+          "caller": "isSingleton",
+          "callee": "singletonBeans.containsKey",
+          "lineNumber": 148
+        },
+        {
+          "caller": "isPrototype",
+          "callee": "beans.get",
+          "lineNumber": 153
+        },
+        {
+          "caller": "isPrototype",
+          "callee": "new NoSuchBeanException",
+          "lineNumber": 154
+        },
+        {
+          "caller": "isPrototype",
+          "callee": "isSingleton",
+          "lineNumber": 156
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 9,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 113,
+      "nonEmptyLines": 101,
+      "functions": [
+        {
+          "name": "BeanDefinitionReader",
+          "startLine": 24,
+          "endLine": 24,
+          "params": []
+        },
+        {
+          "name": "parseClass",
+          "startLine": 26,
+          "endLine": 48,
+          "params": [
+            "aclazz"
+          ]
+        },
+        {
+          "name": "parseForAspect",
+          "startLine": 50,
+          "endLine": 63,
+          "params": [
+            "clazz"
+          ]
+        },
+        {
+          "name": "findAspect",
+          "startLine": 67,
+          "endLine": 93,
+          "params": [
+            "aclazz"
+          ]
+        },
+        {
+          "name": "needProxy",
+          "startLine": 95,
+          "endLine": 105,
+          "params": [
+            "beanClass",
+            "aspectMethodNames"
+          ]
+        },
+        {
+          "name": "addAspectMethodName",
+          "startLine": 107,
+          "endLine": 111,
+          "params": [
+            "aspectMethodNames",
+            "methodName"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BeanDefinitionReader",
+          "startLine": 23,
+          "endLine": 113,
+          "methods": [
+            "BeanDefinitionReader",
+            "parseClass",
+            "parseForAspect",
+            "findAspect",
+            "needProxy",
+            "addAspectMethodName"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BeanDefinitionReader",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "parseClass",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "parseForAspect",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "BeanDefinitionReader",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseClass",
+          "callee": "findAspect",
+          "lineNumber": 27
+        },
+        {
+          "caller": "parseClass",
+          "callee": "new LinkedList<>",
+          "lineNumber": 28
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.isAnnotationPresent",
+          "lineNumber": 30
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.isAnnotationPresent",
+          "lineNumber": 31
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.isAnnotationPresent",
+          "lineNumber": 32
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.isAnnotationPresent",
+          "lineNumber": 33
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.isAnnotationPresent",
+          "lineNumber": 34
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.isAnnotationPresent",
+          "lineNumber": 37
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.getAnnotation(Scope.class).value",
+          "lineNumber": 38
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.getAnnotation",
+          "lineNumber": 38
+        },
+        {
+          "caller": "parseClass",
+          "callee": "needProxy",
+          "lineNumber": 42
+        },
+        {
+          "caller": "parseClass",
+          "callee": "new BeanDefinition",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseClass",
+          "callee": "clazz.getName",
+          "lineNumber": 43
+        },
+        {
+          "caller": "parseClass",
+          "callee": "beanDefinitions.add",
+          "lineNumber": 44
+        },
+        {
+          "caller": "parseClass",
+          "callee": "new BeanDefinitionRegistry",
+          "lineNumber": 47
+        },
+        {
+          "caller": "parseForAspect",
+          "callee": "new LinkedList<>",
+          "lineNumber": 51
+        },
+        {
+          "caller": "parseForAspect",
+          "callee": "aClass.isAnnotationPresent",
+          "lineNumber": 53
+        },
+        {
+          "caller": "parseForAspect",
+          "callee": "aspects.add",
+          "lineNumber": 55
+        },
+        {
+          "caller": "parseForAspect",
+          "callee": "aClass.getDeclaredConstructor().newInstance",
+          "lineNumber": 55
+        },
+        {
+          "caller": "parseForAspect",
+          "callee": "aClass.getDeclaredConstructor",
+          "lineNumber": 55
+        },
+        {
+          "caller": "parseForAspect",
+          "callee": "new RuntimeException",
+          "lineNumber": 58
+        },
+        {
+          "caller": "parseForAspect",
+          "callee": "new AspectRegistry",
+          "lineNumber": 62
+        },
+        {
+          "caller": "findAspect",
+          "callee": "new HashSet<>",
+          "lineNumber": 68
+        },
+        {
+          "caller": "findAspect",
+          "callee": "clazz.isAnnotationPresent",
+          "lineNumber": 70
+        },
+        {
+          "caller": "findAspect",
+          "callee": "clazz.getDeclaredMethods",
+          "lineNumber": 71
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.isAnnotationPresent",
+          "lineNumber": 72
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.getAnnotation(Before.class).value",
+          "lineNumber": 73
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.getAnnotation",
+          "lineNumber": 73
+        },
+        {
+          "caller": "findAspect",
+          "callee": "addAspectMethodName",
+          "lineNumber": 74
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.isAnnotationPresent",
+          "lineNumber": 75
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.getAnnotation(After.class).value",
+          "lineNumber": 76
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.getAnnotation",
+          "lineNumber": 76
+        },
+        {
+          "caller": "findAspect",
+          "callee": "addAspectMethodName",
+          "lineNumber": 77
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.isAnnotationPresent",
+          "lineNumber": 78
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.getAnnotation(Around.class).value",
+          "lineNumber": 79
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.getAnnotation",
+          "lineNumber": 79
+        },
+        {
+          "caller": "findAspect",
+          "callee": "addAspectMethodName",
+          "lineNumber": 80
+        },
+        {
+          "caller": "findAspect",
+          "callee": "clazz.getSuperclass",
+          "lineNumber": 84
+        },
+        {
+          "caller": "findAspect",
+          "callee": "clazz.getSuperclass",
+          "lineNumber": 85
+        },
+        {
+          "caller": "findAspect",
+          "callee": "clazz.getDeclaredMethods",
+          "lineNumber": 86
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.setAccessible",
+          "lineNumber": 87
+        },
+        {
+          "caller": "findAspect",
+          "callee": "addAspectMethodName",
+          "lineNumber": 88
+        },
+        {
+          "caller": "findAspect",
+          "callee": "method.getName",
+          "lineNumber": 88
+        },
+        {
+          "caller": "needProxy",
+          "callee": "beanClass.getDeclaredMethods",
+          "lineNumber": 96
+        },
+        {
+          "caller": "needProxy",
+          "callee": "method.setAccessible",
+          "lineNumber": 97
+        },
+        {
+          "caller": "needProxy",
+          "callee": "PointcutMatcher.matches",
+          "lineNumber": 99
+        },
+        {
+          "caller": "addAspectMethodName",
+          "callee": "methodName.isBlank",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addAspectMethodName",
+          "callee": "aspectMethodNames.add",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 4,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    }
+  ]
+}

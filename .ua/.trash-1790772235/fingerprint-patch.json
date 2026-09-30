@@ -1,0 +1,1248 @@
+{
+  "version": "1.0.0",
+  "baseCommit": "e97cbbf55253fab17790d73fd51a611b7c53990e",
+  "headCommit": "a7b51f21ca37c4162569ec287992e020b5f0349e",
+  "generatedAt": "2026-09-30T12:41:38.524Z",
+  "files": {
+    "src/main/java/web/ApplicationServer.java": {
+      "filePath": "src/main/java/web/ApplicationServer.java",
+      "contentHash": "35677362de838314d3825dee9ecf2ec3334a2748eea9041a1842dd0e7b292d13",
+      "functions": [
+        {
+          "name": "run",
+          "params": [
+            "primaryClass"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 18
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApplicationServer",
+          "methods": [
+            "run"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 20
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.ioc.AnnotationConfigApplicationContext",
+          "specifiers": [
+            "AnnotationConfigApplicationContext"
+          ]
+        },
+        {
+          "source": "web.mvc.HandleMapping",
+          "specifiers": [
+            "HandleMapping"
+          ]
+        },
+        {
+          "source": "web.mvc.Dispatcher",
+          "specifiers": [
+            "Dispatcher"
+          ]
+        },
+        {
+          "source": "web.mvc.TypeConverter",
+          "specifiers": [
+            "TypeConverter"
+          ]
+        },
+        {
+          "source": "web.server.HttpServer",
+          "specifiers": [
+            "HttpServer"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "run",
+        "ApplicationServer"
+      ],
+      "totalLines": 29,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/AopProxy.java": {
+      "filePath": "src/main/java/web/aop/AopProxy.java",
+      "contentHash": "03d074ff131290dc52453aa36a12bfe45e0728c0f9b8b3544d79f5e4e7b5dd7b",
+      "functions": [
+        {
+          "name": "AopProxy",
+          "params": [
+            "aspects"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "createProxy",
+          "params": [
+            "target"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 55
+        }
+      ],
+      "classes": [
+        {
+          "name": "AopProxy",
+          "methods": [
+            "AopProxy",
+            "createProxy"
+          ],
+          "properties": [
+            "aspects"
+          ],
+          "exported": true,
+          "lineCount": 67
+        }
+      ],
+      "imports": [
+        {
+          "source": "net.sf.cglib.proxy.Enhancer",
+          "specifiers": [
+            "Enhancer"
+          ]
+        },
+        {
+          "source": "net.sf.cglib.proxy.MethodInterceptor",
+          "specifiers": [
+            "MethodInterceptor"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.After",
+          "specifiers": [
+            "After"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Around",
+          "specifiers": [
+            "Around"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Before",
+          "specifiers": [
+            "Before"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        },
+        {
+          "source": "java.util.LinkedList",
+          "specifiers": [
+            "LinkedList"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "AopProxy",
+        "createProxy",
+        "AopProxy"
+      ],
+      "totalLines": 83,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/AspectRegistry.java": {
+      "filePath": "src/main/java/web/aop/AspectRegistry.java",
+      "contentHash": "a5c71a19b1390ac22b129ba5718e4b5948fc5d8410203d184bd78e72cd71f901",
+      "functions": [
+        {
+          "name": "AspectRegistry",
+          "params": [
+            "aspects"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "AspectRegistry",
+          "methods": [
+            "AspectRegistry"
+          ],
+          "properties": [
+            "aspects"
+          ],
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.Getter",
+          "specifiers": [
+            "Getter"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "AspectRegistry",
+        "AspectRegistry"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/PointcutMatcher.java": {
+      "filePath": "src/main/java/web/aop/PointcutMatcher.java",
+      "contentHash": "bfeb35f1e3d5e175b74ef4d0c2a2c774284619334e58256ceafca520f9be34f9",
+      "functions": [
+        {
+          "name": "PointcutMatcher",
+          "params": [],
+          "exported": true,
+          "lineCount": 2
+        },
+        {
+          "name": "matches",
+          "params": [
+            "expression",
+            "targetClass",
+            "targetMethod"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 28
+        }
+      ],
+      "classes": [
+        {
+          "name": "PointcutMatcher",
+          "methods": [
+            "PointcutMatcher",
+            "matches"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 34
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        }
+      ],
+      "exports": [
+        "matches",
+        "PointcutMatcher"
+      ],
+      "totalLines": 47,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/Proceeding.java": {
+      "filePath": "src/main/java/web/aop/Proceeding.java",
+      "contentHash": "311cfad6a6667b266734f95b3e39a0d7bc9d065e383d2cb165c11a15ee9dece0",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Proceeding",
+          "methods": [
+            "proceed"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "Proceeding"
+      ],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/aop/ProceedingJoinPoint.java": {
+      "filePath": "src/main/java/web/aop/ProceedingJoinPoint.java",
+      "contentHash": "804e6d00c4bfc25c93fdf2220211801416cafd80d645caa9fd49d0e71a0901fc",
+      "functions": [
+        {
+          "name": "ProceedingJoinPoint",
+          "params": [
+            "method",
+            "args",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 5
+        },
+        {
+          "name": "proceed",
+          "params": [],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "ProceedingJoinPoint",
+          "methods": [
+            "ProceedingJoinPoint",
+            "proceed"
+          ],
+          "properties": [
+            "method",
+            "args",
+            "next"
+          ],
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.Getter",
+          "specifiers": [
+            "Getter"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        }
+      ],
+      "exports": [
+        "ProceedingJoinPoint",
+        "proceed",
+        "ProceedingJoinPoint"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/AnnotationConfigApplicationContext.java": {
+      "filePath": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+      "contentHash": "3aaa0738ac502b6f7b859e23c5a2cd54c34cc9447495d4e512425b9c813ab060",
+      "functions": [
+        {
+          "name": "AnnotationConfigApplicationContext",
+          "params": [
+            "packageName"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "registerScanForRpc",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "getBeans",
+          "params": [
+            "scan"
+          ],
+          "returnType": "Map<String,Object>",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "getBeanFactory",
+          "params": [
+            "scan"
+          ],
+          "returnType": "BeanFactory",
+          "exported": false,
+          "lineCount": 7
+        },
+        {
+          "name": "getBeans",
+          "params": [],
+          "returnType": "List<Object>",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "injectDependence",
+          "params": [],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 19
+        },
+        {
+          "name": "getAllFields",
+          "params": [
+            "aClass"
+          ],
+          "returnType": "List<Field>",
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "getFieldDependence",
+          "params": [
+            "type"
+          ],
+          "returnType": "Object",
+          "exported": false,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "AnnotationConfigApplicationContext",
+          "methods": [
+            "AnnotationConfigApplicationContext",
+            "registerScanForRpc",
+            "getBeans",
+            "getBeanFactory",
+            "getBeans",
+            "injectDependence",
+            "getAllFields",
+            "getFieldDependence"
+          ],
+          "properties": [
+            "scan",
+            "beans",
+            "beanFactory"
+          ],
+          "exported": true,
+          "lineCount": 75
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.aop.AspectRegistry",
+          "specifiers": [
+            "AspectRegistry"
+          ]
+        },
+        {
+          "source": "web.core.ClassScanner",
+          "specifiers": [
+            "ClassScanner"
+          ]
+        },
+        {
+          "source": "web.ioc.annotation.Fileld.Autowired",
+          "specifiers": [
+            "Autowired"
+          ]
+        },
+        {
+          "source": "web.ioc.factory.BeanFactory",
+          "specifiers": [
+            "BeanFactory"
+          ]
+        },
+        {
+          "source": "web.ioc.factory.DefaultBeanFactory",
+          "specifiers": [
+            "DefaultBeanFactory"
+          ]
+        },
+        {
+          "source": "web.ioc.reader.BeanDefinitionReader",
+          "specifiers": [
+            "BeanDefinitionReader"
+          ]
+        },
+        {
+          "source": "web.ioc.registry.BeanDefinitionRegistry",
+          "specifiers": [
+            "BeanDefinitionRegistry"
+          ]
+        },
+        {
+          "source": "web.rpc.RpcInvoke",
+          "specifiers": [
+            "RpcInvoke"
+          ]
+        },
+        {
+          "source": "web.rpc.ServiceRegistry",
+          "specifiers": [
+            "ServiceRegistry"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Field",
+          "specifiers": [
+            "Field"
+          ]
+        },
+        {
+          "source": "java.util",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [
+        "AnnotationConfigApplicationContext",
+        "getBeans",
+        "AnnotationConfigApplicationContext"
+      ],
+      "totalLines": 91,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/annotation/Fileld/Scope.java": {
+      "filePath": "src/main/java/web/ioc/annotation/Fileld/Scope.java",
+      "contentHash": "edc1f2bc50cb740cf7db18b7056cc036d58f6546ab8c0bb5b164495eb386873f",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "web.ioc.enumeration.ScopeEnum",
+          "specifiers": [
+            "ScopeEnum"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.ElementType",
+          "specifiers": [
+            "ElementType"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Retention",
+          "specifiers": [
+            "Retention"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.RetentionPolicy",
+          "specifiers": [
+            "RetentionPolicy"
+          ]
+        },
+        {
+          "source": "java.lang.annotation.Target",
+          "specifiers": [
+            "Target"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 15,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/enumeration/ScopeEnum.java": {
+      "filePath": "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+      "contentHash": "6f08b164823f4f162b99cb5cd9d56fa767dc488b651258f2cdc714756966e950",
+      "functions": [],
+      "classes": [
+        {
+          "name": "ScopeEnum",
+          "methods": [],
+          "properties": [],
+          "exported": true,
+          "lineCount": 4
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "ScopeEnum"
+      ],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/exception/NoSuchBeanException.java": {
+      "filePath": "src/main/java/web/ioc/exception/NoSuchBeanException.java",
+      "contentHash": "0d02e1f607217a645072fb061640f4e07409497a3ec3cea972dcb8715af94de1",
+      "functions": [
+        {
+          "name": "NoSuchBeanException",
+          "params": [
+            "message"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoSuchBeanException",
+          "methods": [
+            "NoSuchBeanException"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "NoSuchBeanException",
+        "NoSuchBeanException"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/exception/NoUniqueBeanException.java": {
+      "filePath": "src/main/java/web/ioc/exception/NoUniqueBeanException.java",
+      "contentHash": "be167c2ad187ed0a22a76a88b851835b140431a67f63320edafcf01e04a44304",
+      "functions": [
+        {
+          "name": "NoUniqueBeanException",
+          "params": [
+            "message"
+          ],
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "NoUniqueBeanException",
+          "methods": [
+            "NoUniqueBeanException"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "imports": [],
+      "exports": [
+        "NoUniqueBeanException",
+        "NoUniqueBeanException"
+      ],
+      "totalLines": 8,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/factory/BeanFactory.java": {
+      "filePath": "src/main/java/web/ioc/factory/BeanFactory.java",
+      "contentHash": "04123ff678f14935da39a8529929a1fbc8a3b094cd84c68c3199dff27a4e57d5",
+      "functions": [],
+      "classes": [
+        {
+          "name": "BeanFactory",
+          "methods": [
+            "getBean",
+            "getBean",
+            "getBean",
+            "getBeans",
+            "containsBean",
+            "isSingleton",
+            "isPrototype"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 9
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "BeanFactory"
+      ],
+      "totalLines": 43,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/factory/DefaultBeanFactory.java": {
+      "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+      "contentHash": "5db5d117dea1060c764654121ae8a0ace0d3bec6880ddb7f790f94911bb92307",
+      "functions": [
+        {
+          "name": "DefaultBeanFactory",
+          "params": [
+            "definitions",
+            "aspects"
+          ],
+          "exported": true,
+          "lineCount": 26
+        },
+        {
+          "name": "getBean",
+          "params": [
+            "beanName"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 22
+        },
+        {
+          "name": "getBean",
+          "params": [
+            "beanName",
+            "requiredType"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 14
+        },
+        {
+          "name": "getBean",
+          "params": [
+            "requiredType"
+          ],
+          "returnType": "Object",
+          "exported": true,
+          "lineCount": 31
+        },
+        {
+          "name": "getBeans",
+          "params": [],
+          "returnType": "Map<String, Object>",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "containsBean",
+          "params": [
+            "beanName"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 4
+        },
+        {
+          "name": "isSingleton",
+          "params": [
+            "beanName"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "isPrototype",
+          "params": [
+            "beanName"
+          ],
+          "returnType": "boolean",
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [
+        {
+          "name": "DefaultBeanFactory",
+          "methods": [
+            "DefaultBeanFactory",
+            "getBean",
+            "getBean",
+            "getBean",
+            "getBeans",
+            "containsBean",
+            "isSingleton",
+            "isPrototype"
+          ],
+          "properties": [
+            "beans",
+            "singletonBeans",
+            "beanWithDefinition",
+            "aspects",
+            "singletonBeanRegistry",
+            "om"
+          ],
+          "exported": true,
+          "lineCount": 145
+        }
+      ],
+      "imports": [
+        {
+          "source": "com.fasterxml.jackson.databind.ObjectMapper",
+          "specifiers": [
+            "ObjectMapper"
+          ]
+        },
+        {
+          "source": "lombok.Getter",
+          "specifiers": [
+            "Getter"
+          ]
+        },
+        {
+          "source": "web.aop.AopProxy",
+          "specifiers": [
+            "AopProxy"
+          ]
+        },
+        {
+          "source": "web.ioc.enumeration.ScopeEnum",
+          "specifiers": [
+            "ScopeEnum"
+          ]
+        },
+        {
+          "source": "web.ioc.exception.NoSuchBeanException",
+          "specifiers": [
+            "NoSuchBeanException"
+          ]
+        },
+        {
+          "source": "web.ioc.exception.NoUniqueBeanException",
+          "specifiers": [
+            "NoUniqueBeanException"
+          ]
+        },
+        {
+          "source": "web.ioc.pojo.BeanDefinition",
+          "specifiers": [
+            "BeanDefinition"
+          ]
+        },
+        {
+          "source": "web.ioc.registry.SingletonBeanRegistry",
+          "specifiers": [
+            "SingletonBeanRegistry"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.InvocationTargetException",
+          "specifiers": [
+            "InvocationTargetException"
+          ]
+        },
+        {
+          "source": "java.util",
+          "specifiers": [
+            "*"
+          ]
+        }
+      ],
+      "exports": [
+        "DefaultBeanFactory",
+        "getBean",
+        "getBean",
+        "getBean",
+        "getBeans",
+        "containsBean",
+        "isSingleton",
+        "isPrototype",
+        "DefaultBeanFactory"
+      ],
+      "totalLines": 160,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/pojo/BeanDefinition.java": {
+      "filePath": "src/main/java/web/ioc/pojo/BeanDefinition.java",
+      "contentHash": "04879738d242412050bcc439b8de330bd37ff64c87ced9ee0166e163c97012e7",
+      "functions": [],
+      "classes": [
+        {
+          "name": "BeanDefinition",
+          "methods": [],
+          "properties": [
+            "beanName",
+            "beanClass",
+            "scopeEnum",
+            "isNeedProxy"
+          ],
+          "exported": true,
+          "lineCount": 25
+        }
+      ],
+      "imports": [
+        {
+          "source": "lombok.AllArgsConstructor",
+          "specifiers": [
+            "AllArgsConstructor"
+          ]
+        },
+        {
+          "source": "lombok.Data",
+          "specifiers": [
+            "Data"
+          ]
+        },
+        {
+          "source": "web.ioc.enumeration.ScopeEnum",
+          "specifiers": [
+            "ScopeEnum"
+          ]
+        }
+      ],
+      "exports": [
+        "BeanDefinition"
+      ],
+      "totalLines": 32,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/reader/BeanDefinitionReader.java": {
+      "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+      "contentHash": "5094a84a4b22e79d9043a19fdadddb7f78bacaca895acc28b61baa22c8e531a8",
+      "functions": [
+        {
+          "name": "BeanDefinitionReader",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "parseClass",
+          "params": [
+            "aclazz"
+          ],
+          "returnType": "BeanDefinitionRegistry",
+          "exported": true,
+          "lineCount": 23
+        },
+        {
+          "name": "parseForAspect",
+          "params": [
+            "clazz"
+          ],
+          "returnType": "AspectRegistry",
+          "exported": true,
+          "lineCount": 14
+        },
+        {
+          "name": "findAspect",
+          "params": [
+            "aclazz"
+          ],
+          "returnType": "Set<String>",
+          "exported": false,
+          "lineCount": 27
+        },
+        {
+          "name": "needProxy",
+          "params": [
+            "beanClass",
+            "aspectMethodNames"
+          ],
+          "returnType": "boolean",
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "addAspectMethodName",
+          "params": [
+            "aspectMethodNames",
+            "methodName"
+          ],
+          "returnType": "void",
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [
+        {
+          "name": "BeanDefinitionReader",
+          "methods": [
+            "BeanDefinitionReader",
+            "parseClass",
+            "parseForAspect",
+            "findAspect",
+            "needProxy",
+            "addAspectMethodName"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 91
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.aop.AspectRegistry",
+          "specifiers": [
+            "AspectRegistry"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.After",
+          "specifiers": [
+            "After"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Around",
+          "specifiers": [
+            "Around"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.method.Before",
+          "specifiers": [
+            "Before"
+          ]
+        },
+        {
+          "source": "web.aop.annotation.type.Aspect",
+          "specifiers": [
+            "Aspect"
+          ]
+        },
+        {
+          "source": "web.aop.PointcutMatcher",
+          "specifiers": [
+            "PointcutMatcher"
+          ]
+        },
+        {
+          "source": "web.ioc.annotation.Fileld.Scope",
+          "specifiers": [
+            "Scope"
+          ]
+        },
+        {
+          "source": "web.ioc.annotation.Type",
+          "specifiers": [
+            "*"
+          ]
+        },
+        {
+          "source": "web.ioc.enumeration.ScopeEnum",
+          "specifiers": [
+            "ScopeEnum"
+          ]
+        },
+        {
+          "source": "web.ioc.pojo.BeanDefinition",
+          "specifiers": [
+            "BeanDefinition"
+          ]
+        },
+        {
+          "source": "web.ioc.registry.BeanDefinitionRegistry",
+          "specifiers": [
+            "BeanDefinitionRegistry"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.InvocationTargetException",
+          "specifiers": [
+            "InvocationTargetException"
+          ]
+        },
+        {
+          "source": "java.lang.reflect.Method",
+          "specifiers": [
+            "Method"
+          ]
+        },
+        {
+          "source": "java.util.HashSet",
+          "specifiers": [
+            "HashSet"
+          ]
+        },
+        {
+          "source": "java.util.LinkedList",
+          "specifiers": [
+            "LinkedList"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        },
+        {
+          "source": "java.util.Set",
+          "specifiers": [
+            "Set"
+          ]
+        }
+      ],
+      "exports": [
+        "BeanDefinitionReader",
+        "parseClass",
+        "parseForAspect",
+        "BeanDefinitionReader"
+      ],
+      "totalLines": 114,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java": {
+      "filePath": "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java",
+      "contentHash": "f04f901df2fc3816ebf7be8a1e13f7713c1e94885af7df97875b3fe1c830b983",
+      "functions": [
+        {
+          "name": "BeanDefinitionRegistry",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "BeanDefinitionRegistry",
+          "params": [
+            "beanDefinitions"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "getBeanDefinitions",
+          "params": [],
+          "returnType": "List<BeanDefinition>",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "BeanDefinitionRegistry",
+          "methods": [
+            "BeanDefinitionRegistry",
+            "BeanDefinitionRegistry",
+            "getBeanDefinitions"
+          ],
+          "properties": [
+            "beanDefinitions"
+          ],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "imports": [
+        {
+          "source": "web.ioc.pojo.BeanDefinition",
+          "specifiers": [
+            "BeanDefinition"
+          ]
+        },
+        {
+          "source": "java.util.ArrayList",
+          "specifiers": [
+            "ArrayList"
+          ]
+        },
+        {
+          "source": "java.util.List",
+          "specifiers": [
+            "List"
+          ]
+        }
+      ],
+      "exports": [
+        "BeanDefinitionRegistry",
+        "BeanDefinitionRegistry",
+        "getBeanDefinitions",
+        "BeanDefinitionRegistry"
+      ],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "src/main/java/web/ioc/registry/SingletonBeanRegistry.java": {
+      "filePath": "src/main/java/web/ioc/registry/SingletonBeanRegistry.java",
+      "contentHash": "b7615b876edc177a91c99cf0f175c4a63f0fa0388d9a16c1b7a1cf240ebd51b3",
+      "functions": [
+        {
+          "name": "SingletonBeanRegistry",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "SingletonBeanRegistry",
+          "params": [
+            "singletonBeans"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "getSingletonBeans",
+          "params": [],
+          "returnType": "Map<String,Object>",
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "addSingletonBeans",
+          "params": [
+            "singletonBeans"
+          ],
+          "returnType": "void",
+          "exported": true,
+          "lineCount": 3
+        }
+      ],
+      "classes": [
+        {
+          "name": "SingletonBeanRegistry",
+          "methods": [
+            "SingletonBeanRegistry",
+            "SingletonBeanRegistry",
+            "getSingletonBeans",
+            "addSingletonBeans"
+          ],
+          "properties": [
+            "singletonBeans"
+          ],
+          "exported": true,
+          "lineCount": 13
+        }
+      ],
+      "imports": [
+        {
+          "source": "java.util.HashMap",
+          "specifiers": [
+            "HashMap"
+          ]
+        },
+        {
+          "source": "java.util.Map",
+          "specifiers": [
+            "Map"
+          ]
+        }
+      ],
+      "exports": [
+        "SingletonBeanRegistry",
+        "SingletonBeanRegistry",
+        "getSingletonBeans",
+        "addSingletonBeans",
+        "SingletonBeanRegistry"
+      ],
+      "totalLines": 19,
+      "hasStructuralAnalysis": true
+    },
+    "witch -c recover-ioc": {
+      "filePath": "witch -c recover-ioc",
+      "contentHash": "fa5a3f72da4802cbc59edc6c076a544e95bf6c081d1ca4dacc58a6df6b45d10f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 96,
+      "hasStructuralAnalysis": false
+    }
+  },
+  "deletedFiles": []
+}

@@ -1,0 +1,4 @@
+import fs from 'node:fs';
+const p='.ua/knowledge-graph.json';const g=JSON.parse(fs.readFileSync(p,'utf8'));const assigned=new Set(g.layers.flatMap(l=>l.nodeIds));
+for(const n of g.nodes){if(assigned.has(n.id)||!['file','config','document','service','pipeline','schema','resource','endpoint'].includes(n.type))continue;const f=n.filePath||'';let id='layer:other';if(/web\/(ioc|aop)\//.test(f))id='layer:ioc-aop';else if(/web\/ApplicationServer|web\/core|web\/server/.test(f))id='layer:bootstrap-server';else if(/web\/mvc\//.test(f))id='layer:mvc';else if(/web\/rpc\//.test(f))id='layer:rpc';else if(/web\/orm\//.test(f))id='layer:orm';else if(/src\/main\/java\/test/.test(f))id='layer:demo-tests';const l=g.layers.find(x=>x.id===id)||g.layers.at(-1);l.nodeIds.push(n.id);assigned.add(n.id)}
+fs.writeFileSync(p,JSON.stringify(g,null,2));

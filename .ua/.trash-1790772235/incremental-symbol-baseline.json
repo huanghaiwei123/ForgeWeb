@@ -1,0 +1,882 @@
+{
+  "version": 1,
+  "baseCommit": "e97cbbf55253fab17790d73fd51a611b7c53990e",
+  "headCommit": "a7b51f21ca37c4162569ec287992e020b5f0349e",
+  "files": [
+    {
+      "filePath": "src/main/java/web/ApplicationServer.java",
+      "nodes": [
+        {
+          "id": "file:src/main/java/web/ApplicationServer.java",
+          "type": "file",
+          "name": "ApplicationServer.java",
+          "filePath": "src/main/java/web/ApplicationServer.java",
+          "summary": "应用启动入口，创建 IOC 上下文、注册 MVC 路由并启动 Netty HTTP 服务器。",
+          "tags": [
+            "java",
+            "code"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "class:src/main/java/web/ApplicationServer.java:ApplicationServer",
+          "type": "class",
+          "name": "ApplicationServer",
+          "filePath": "src/main/java/web/ApplicationServer.java",
+          "lineRange": [
+            13,
+            32
+          ],
+          "summary": "ApplicationServer 类，负责 应用启动入口，创建 IOC 上下文、注册 MVC 路由并启动 Netty HTTP 服务器。",
+          "tags": [
+            "java",
+            "code"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "function:src/main/java/web/ApplicationServer.java:run",
+          "type": "function",
+          "name": "run",
+          "filePath": "src/main/java/web/ApplicationServer.java",
+          "lineRange": [
+            14,
+            31
+          ],
+          "summary": "run 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code"
+          ],
+          "complexity": "simple"
+        }
+      ],
+      "edges": [
+        {
+          "source": "file:src/main/java/web/ApplicationServer.java",
+          "target": "class:src/main/java/web/ApplicationServer.java:ApplicationServer",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ApplicationServer.java",
+          "target": "function:src/main/java/web/ApplicationServer.java:run",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ApplicationServer.java",
+          "target": "function:src/main/java/web/ApplicationServer.java:run",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "filePath": "src/main/java/web/aop/AopProxy.java",
+      "nodes": [
+        {
+          "id": "file:src/main/java/web/aop/AopProxy.java",
+          "type": "file",
+          "name": "AopProxy.java",
+          "filePath": "src/main/java/web/aop/AopProxy.java",
+          "summary": "基于 CGLIB 的方法拦截器，执行 Before、Around 和 After 通知。",
+          "tags": [
+            "java",
+            "code",
+            "aop"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "class:src/main/java/web/aop/AopProxy.java:AopProxy",
+          "type": "class",
+          "name": "AopProxy",
+          "filePath": "src/main/java/web/aop/AopProxy.java",
+          "lineRange": [
+            15,
+            82
+          ],
+          "summary": "AopProxy 类，负责 基于 CGLIB 的方法拦截器，执行 Before、Around 和 After 通知。",
+          "tags": [
+            "java",
+            "code",
+            "aop"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "function:src/main/java/web/aop/AopProxy.java:AopProxy",
+          "type": "function",
+          "name": "AopProxy",
+          "filePath": "src/main/java/web/aop/AopProxy.java",
+          "lineRange": [
+            19,
+            21
+          ],
+          "summary": "AopProxy 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "aop"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/aop/AopProxy.java:createProxy",
+          "type": "function",
+          "name": "createProxy",
+          "filePath": "src/main/java/web/aop/AopProxy.java",
+          "lineRange": [
+            25,
+            80
+          ],
+          "summary": "createProxy 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "aop"
+          ],
+          "complexity": "simple"
+        }
+      ],
+      "edges": [
+        {
+          "source": "file:src/main/java/web/aop/AopProxy.java",
+          "target": "class:src/main/java/web/aop/AopProxy.java:AopProxy",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/aop/AopProxy.java",
+          "target": "function:src/main/java/web/aop/AopProxy.java:AopProxy",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/aop/AopProxy.java",
+          "target": "function:src/main/java/web/aop/AopProxy.java:AopProxy",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/aop/AopProxy.java",
+          "target": "function:src/main/java/web/aop/AopProxy.java:createProxy",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/aop/AopProxy.java",
+          "target": "function:src/main/java/web/aop/AopProxy.java:createProxy",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "filePath": "src/main/java/web/aop/AspectRegistry.java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "filePath": "src/main/java/web/aop/Proceeding.java",
+      "nodes": [],
+      "edges": []
+    },
+    {
+      "filePath": "src/main/java/web/aop/ProceedingJoinPoint.java",
+      "nodes": [
+        {
+          "id": "file:src/main/java/web/aop/ProceedingJoinPoint.java",
+          "type": "file",
+          "name": "ProceedingJoinPoint.java",
+          "filePath": "src/main/java/web/aop/ProceedingJoinPoint.java",
+          "summary": "封装目标对象、方法、参数和 MethodProxy，供 Around 通知调用 proceed。",
+          "tags": [
+            "java",
+            "code",
+            "aop"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "class:src/main/java/web/aop/ProceedingJoinPoint.java:ProceedingJoinPoint",
+          "type": "class",
+          "name": "ProceedingJoinPoint",
+          "filePath": "src/main/java/web/aop/ProceedingJoinPoint.java",
+          "lineRange": [
+            8,
+            26
+          ],
+          "summary": "ProceedingJoinPoint 类，负责 封装目标对象、方法、参数和 MethodProxy，供 Around 通知调用 proceed。",
+          "tags": [
+            "java",
+            "code",
+            "aop"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "function:src/main/java/web/aop/ProceedingJoinPoint.java:ProceedingJoinPoint",
+          "type": "function",
+          "name": "ProceedingJoinPoint",
+          "filePath": "src/main/java/web/aop/ProceedingJoinPoint.java",
+          "lineRange": [
+            16,
+            21
+          ],
+          "summary": "ProceedingJoinPoint 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "aop"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/aop/ProceedingJoinPoint.java:proceed",
+          "type": "function",
+          "name": "proceed",
+          "filePath": "src/main/java/web/aop/ProceedingJoinPoint.java",
+          "lineRange": [
+            22,
+            24
+          ],
+          "summary": "proceed 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "aop"
+          ],
+          "complexity": "simple"
+        }
+      ],
+      "edges": [
+        {
+          "source": "file:src/main/java/web/aop/ProceedingJoinPoint.java",
+          "target": "class:src/main/java/web/aop/ProceedingJoinPoint.java:ProceedingJoinPoint",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/aop/ProceedingJoinPoint.java",
+          "target": "function:src/main/java/web/aop/ProceedingJoinPoint.java:ProceedingJoinPoint",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/aop/ProceedingJoinPoint.java",
+          "target": "function:src/main/java/web/aop/ProceedingJoinPoint.java:ProceedingJoinPoint",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/aop/ProceedingJoinPoint.java",
+          "target": "function:src/main/java/web/aop/ProceedingJoinPoint.java:proceed",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/aop/ProceedingJoinPoint.java",
+          "target": "function:src/main/java/web/aop/ProceedingJoinPoint.java:proceed",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "filePath": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+      "nodes": [
+        {
+          "id": "file:src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "type": "file",
+          "name": "AnnotationConfigApplicationContext.java",
+          "filePath": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "summary": "IOC 应用上下文，负责扫描 Bean、创建工厂、执行字段注入并把容器 Bean 注册给 RPC。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "annotation"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "class:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:AnnotationConfigApplicationContext",
+          "type": "class",
+          "name": "AnnotationConfigApplicationContext",
+          "filePath": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "lineRange": [
+            14,
+            88
+          ],
+          "summary": "AnnotationConfigApplicationContext 类，负责 IOC 应用上下文，负责扫描 Bean、创建工厂、执行字段注入并把容器 Bean 注册给 RPC。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "annotation"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:AnnotationConfigApplicationContext",
+          "type": "function",
+          "name": "AnnotationConfigApplicationContext",
+          "filePath": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "lineRange": [
+            17,
+            22
+          ],
+          "summary": "AnnotationConfigApplicationContext 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "annotation"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:getBeans",
+          "type": "function",
+          "name": "getBeans",
+          "filePath": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "lineRange": [
+            31,
+            34
+          ],
+          "summary": "getBeans 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "annotation"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:injectDependence",
+          "type": "function",
+          "name": "injectDependence",
+          "filePath": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "lineRange": [
+            47,
+            65
+          ],
+          "summary": "injectDependence 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "annotation"
+          ],
+          "complexity": "simple"
+        }
+      ],
+      "edges": [
+        {
+          "source": "file:src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "target": "class:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:AnnotationConfigApplicationContext",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "target": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:AnnotationConfigApplicationContext",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "target": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:AnnotationConfigApplicationContext",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "target": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:getBeans",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "target": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:getBeans",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "target": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:injectDependence",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:AnnotationConfigApplicationContext",
+          "target": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:getBeans",
+          "type": "calls",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:AnnotationConfigApplicationContext",
+          "target": "function:src/main/java/web/ioc/AnnotationConfigApplicationContext.java:injectDependence",
+          "type": "calls",
+          "direction": "forward",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+      "nodes": [
+        {
+          "id": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "type": "file",
+          "name": "DefaultBeanFactory.java",
+          "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "summary": "默认 Bean 工厂，按照 BeanDefinition 创建对象、维护单例缓存，并在需要时创建 AOP 代理。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "factory"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "class:src/main/java/web/ioc/factory/DefaultBeanFactory.java:DefaultBeanFactory",
+          "type": "class",
+          "name": "DefaultBeanFactory",
+          "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "lineRange": [
+            17,
+            154
+          ],
+          "summary": "DefaultBeanFactory 类，负责 默认 Bean 工厂，按照 BeanDefinition 创建对象、维护单例缓存，并在需要时创建 AOP 代理。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "factory"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:DefaultBeanFactory",
+          "type": "function",
+          "name": "DefaultBeanFactory",
+          "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "lineRange": [
+            30,
+            65
+          ],
+          "summary": "DefaultBeanFactory 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "factory"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:getBean",
+          "type": "function",
+          "name": "getBean",
+          "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "lineRange": [
+            76,
+            91
+          ],
+          "summary": "getBean 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "factory"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:getBeans",
+          "type": "function",
+          "name": "getBeans",
+          "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "lineRange": [
+            128,
+            131
+          ],
+          "summary": "getBeans 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "factory"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:containsBean",
+          "type": "function",
+          "name": "containsBean",
+          "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "lineRange": [
+            133,
+            136
+          ],
+          "summary": "containsBean 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "factory"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isSingleton",
+          "type": "function",
+          "name": "isSingleton",
+          "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "lineRange": [
+            138,
+            144
+          ],
+          "summary": "isSingleton 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "factory"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isPrototype",
+          "type": "function",
+          "name": "isPrototype",
+          "filePath": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "lineRange": [
+            146,
+            152
+          ],
+          "summary": "isPrototype 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc",
+            "factory"
+          ],
+          "complexity": "simple"
+        }
+      ],
+      "edges": [
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "class:src/main/java/web/ioc/factory/DefaultBeanFactory.java:DefaultBeanFactory",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:DefaultBeanFactory",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:DefaultBeanFactory",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:getBean",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:getBean",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:getBeans",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:getBeans",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:containsBean",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:containsBean",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isSingleton",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isSingleton",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isPrototype",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isPrototype",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:getBean",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isPrototype",
+          "type": "calls",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:getBean",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isSingleton",
+          "type": "calls",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isPrototype",
+          "target": "function:src/main/java/web/ioc/factory/DefaultBeanFactory.java:isSingleton",
+          "type": "calls",
+          "direction": "forward",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+      "nodes": [
+        {
+          "id": "file:src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "type": "file",
+          "name": "BeanDefinitionReader.java",
+          "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "summary": "Bean 定义读取器，根据类型注解、作用域和切点匹配结果生成 BeanDefinition。",
+          "tags": [
+            "java",
+            "code",
+            "ioc"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "class:src/main/java/web/ioc/reader/BeanDefinitionReader.java:BeanDefinitionReader",
+          "type": "class",
+          "name": "BeanDefinitionReader",
+          "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "lineRange": [
+            21,
+            86
+          ],
+          "summary": "BeanDefinitionReader 类，负责 Bean 定义读取器，根据类型注解、作用域和切点匹配结果生成 BeanDefinition。",
+          "tags": [
+            "java",
+            "code",
+            "ioc"
+          ],
+          "complexity": "moderate"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:BeanDefinitionReader",
+          "type": "function",
+          "name": "BeanDefinitionReader",
+          "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "lineRange": [
+            22,
+            22
+          ],
+          "summary": "BeanDefinitionReader 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:parseClass",
+          "type": "function",
+          "name": "parseClass",
+          "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "lineRange": [
+            24,
+            46
+          ],
+          "summary": "parseClass 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:findAspect",
+          "type": "function",
+          "name": "findAspect",
+          "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "lineRange": [
+            48,
+            67
+          ],
+          "summary": "findAspect 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc"
+          ],
+          "complexity": "simple"
+        },
+        {
+          "id": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:needProxy",
+          "type": "function",
+          "name": "needProxy",
+          "filePath": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "lineRange": [
+            69,
+            78
+          ],
+          "summary": "needProxy 方法，执行该文件中的核心处理逻辑。",
+          "tags": [
+            "java",
+            "code",
+            "ioc"
+          ],
+          "complexity": "simple"
+        }
+      ],
+      "edges": [
+        {
+          "source": "file:src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "target": "class:src/main/java/web/ioc/reader/BeanDefinitionReader.java:BeanDefinitionReader",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "target": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:BeanDefinitionReader",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "target": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:BeanDefinitionReader",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "target": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:parseClass",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "target": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:parseClass",
+          "type": "exports",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "file:src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "target": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:findAspect",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "file:src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "target": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:needProxy",
+          "type": "contains",
+          "direction": "forward",
+          "weight": 1
+        },
+        {
+          "source": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:parseClass",
+          "target": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:findAspect",
+          "type": "calls",
+          "direction": "forward",
+          "weight": 0.8
+        },
+        {
+          "source": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:parseClass",
+          "target": "function:src/main/java/web/ioc/reader/BeanDefinitionReader.java:needProxy",
+          "type": "calls",
+          "direction": "forward",
+          "weight": 0.8
+        }
+      ]
+    },
+    {
+      "filePath": "witch -c recover-ioc",
+      "nodes": [],
+      "edges": []
+    }
+  ]
+}

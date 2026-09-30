@@ -1,0 +1,108 @@
+{
+  "projectRoot": "D:\\hhw-web-wheel",
+  "batchFiles": [
+    {
+      "path": "src/main/java/web/ApplicationServer.java",
+      "language": "java",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/AopProxy.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/AspectRegistry.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/Proceeding.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/aop/ProceedingJoinPoint.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+      "language": "java",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+      "language": "java",
+      "sizeLines": 159,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+      "language": "java",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "witch -c recover-ioc",
+      "language": "unknown",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/web/aop/ProceedingJoinPoint.java": [],
+    "src/main/java/web/ioc/reader/BeanDefinitionReader.java": [
+      "src/main/java/web/aop/AspectRegistry.java",
+      "src/main/java/web/aop/PointcutMatcher.java",
+      "src/main/java/web/aop/annotation/method/After.java",
+      "src/main/java/web/aop/annotation/method/Around.java",
+      "src/main/java/web/aop/annotation/method/Before.java",
+      "src/main/java/web/aop/annotation/type/Aspect.java",
+      "src/main/java/web/ioc/annotation/Fileld/Scope.java",
+      "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+      "src/main/java/web/ioc/pojo/BeanDefinition.java",
+      "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java"
+    ],
+    "src/main/java/web/ioc/AnnotationConfigApplicationContext.java": [
+      "src/main/java/web/aop/AspectRegistry.java",
+      "src/main/java/web/core/ClassScanner.java",
+      "src/main/java/web/ioc/annotation/Fileld/Autowired.java",
+      "src/main/java/web/ioc/factory/BeanFactory.java",
+      "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+      "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+      "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java",
+      "src/main/java/web/rpc/RpcInvoke.java",
+      "src/main/java/web/rpc/ServiceRegistry.java"
+    ],
+    "src/main/java/web/aop/AopProxy.java": [
+      "src/main/java/web/aop/annotation/method/After.java",
+      "src/main/java/web/aop/annotation/method/Around.java",
+      "src/main/java/web/aop/annotation/method/Before.java"
+    ],
+    "src/main/java/web/ioc/factory/DefaultBeanFactory.java": [
+      "src/main/java/web/aop/AopProxy.java",
+      "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+      "src/main/java/web/ioc/exception/NoSuchBeanException.java",
+      "src/main/java/web/ioc/exception/NoUniqueBeanException.java",
+      "src/main/java/web/ioc/pojo/BeanDefinition.java",
+      "src/main/java/web/ioc/registry/SingletonBeanRegistry.java"
+    ],
+    "src/main/java/web/ApplicationServer.java": [
+      "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+      "src/main/java/web/mvc/Dispatcher.java",
+      "src/main/java/web/mvc/HandleMapping.java",
+      "src/main/java/web/mvc/TypeConverter.java",
+      "src/main/java/web/server/HttpServer.java"
+    ],
+    "witch -c recover-ioc": [],
+    "src/main/java/web/aop/Proceeding.java": [],
+    "src/main/java/web/aop/AspectRegistry.java": []
+  }
+}

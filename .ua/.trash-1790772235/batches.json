@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 94,
+  "totalBatches": 4,
+  "exportsByPath": {
+    ".gitattributes": [],
+    "mvnw": [],
+    "src/main/java/test/MiniSpringboot.java": [
+      "main",
+      "MiniSpringboot"
+    ],
+    "src/main/java/test/aspect/AspectTest.java": [
+      "before",
+      "after",
+      "AspectTest"
+    ],
+    "src/main/java/test/controller/HelloController.java": [
+      "hello",
+      "hello2",
+      "user",
+      "saveUser",
+      "HelloController"
+    ],
+    "src/main/java/test/entity/User.java": [
+      "User"
+    ],
+    "src/main/java/web/ApplicationServer.java": [
+      "run",
+      "ApplicationServer"
+    ],
+    "src/main/java/web/aop/AopProxy.java": [
+      "AopProxy",
+      "createProxy",
+      "AopProxy"
+    ],
+    "src/main/java/web/aop/AspectRegistry.java": [
+      "AspectRegistry",
+      "AspectRegistry"
+    ],
+    "src/main/java/web/aop/PointcutMatcher.java": [
+      "matches",
+      "PointcutMatcher"
+    ],
+    "src/main/java/web/aop/Proceeding.java": [
+      "Proceeding"
+    ],
+    "src/main/java/web/aop/ProceedingJoinPoint.java": [
+      "ProceedingJoinPoint",
+      "proceed",
+      "ProceedingJoinPoint"
+    ],
+    "src/main/java/web/aop/annotation/method/After.java": [],
+    "src/main/java/web/aop/annotation/method/Around.java": [],
+    "src/main/java/web/aop/annotation/method/Before.java": [],
+    "src/main/java/web/aop/annotation/type/Aspect.java": [],
+    "src/main/java/web/common/Result.java": [
+      "Result",
+      "success",
+      "Result"
+    ],
+    "src/main/java/web/core/ClassScanner.java": [
+      "scan",
+      "scanDir",
+      "ClassScanner"
+    ],
+    "src/main/java/web/exception/GlobalException.java": [
+      "GlobalException"
+    ],
+    "src/main/java/web/ioc/AnnotationConfigApplicationContext.java": [
+      "AnnotationConfigApplicationContext",
+      "getBeans",
+      "AnnotationConfigApplicationContext"
+    ],
+    "src/main/java/web/ioc/annotation/Fileld/Autowired.java": [],
+    "src/main/java/web/ioc/annotation/Fileld/Scope.java": [],
+    "src/main/java/web/ioc/annotation/Type/Component.java": [],
+    "src/main/java/web/ioc/annotation/Type/Configuration.java": [],
+    "src/main/java/web/ioc/annotation/Type/Controller.java": [],
+    "src/main/java/web/ioc/annotation/Type/RestController.java": [],
+    "src/main/java/web/ioc/annotation/Type/Service.java": [],
+    "src/main/java/web/ioc/enumeration/ScopeEnum.java": [
+      "ScopeEnum"
+    ],
+    "src/main/java/web/ioc/exception/NoSuchBeanException.java": [
+      "NoSuchBeanException",
+      "NoSuchBeanException"
+    ],
+    "src/main/java/web/ioc/exception/NoUniqueBeanException.java": [
+      "NoUniqueBeanException",
+      "NoUniqueBeanException"
+    ],
+    "src/main/java/web/ioc/factory/BeanFactory.java": [
+      "BeanFactory"
+    ],
+    "src/main/java/web/ioc/factory/DefaultBeanFactory.java": [
+      "DefaultBeanFactory",
+      "getBean",
+      "getBean",
+      "getBean",
+      "getBeans",
+      "containsBean",
+      "isSingleton",
+      "isPrototype",
+      "DefaultBeanFactory"
+    ],
+    "src/main/java/web/ioc/pojo/BeanDefinition.java": [
+      "BeanDefinition"
+    ],
+    "src/main/java/web/ioc/reader/BeanDefinitionReader.java": [
+      "BeanDefinitionReader",
+      "parseClass",
+      "parseForAspect",
+      "BeanDefinitionReader"
+    ],
+    "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java": [
+      "BeanDefinitionRegistry",
+      "BeanDefinitionRegistry",
+      "getBeanDefinitions",
+      "BeanDefinitionRegistry"
+    ],
+    "src/main/java/web/ioc/registry/SingletonBeanRegistry.java": [
+      "SingletonBeanRegistry",
+      "SingletonBeanRegistry",
+      "getSingletonBeans",
+      "addSingletonBeans",
+      "SingletonBeanRegistry"
+    ],
+    "src/main/java/web/mvc/ArgumentResolver.java": [
+      "ArgumentResolver",
+      "resolver",
+      "ArgumentResolver"
+    ],
+    "src/main/java/web/mvc/Dispatcher.java": [
+      "Dispatcher",
+      "dispatch",
+      "Dispatcher"
+    ],
+    "src/main/java/web/mvc/HandleExecution.java": [
+      "HandleExecution",
+      "getMethod",
+      "execute",
+      "HandleExecution"
+    ],
+    "src/main/java/web/mvc/HandleMapping.java": [
+      "register",
+      "get",
+      "methodOf",
+      "HandleMapping"
+    ],
+    "src/main/java/web/mvc/MappingResult.java": [
+      "MappingResult",
+      "getExecution",
+      "getPathParams",
+      "MappingResult"
+    ],
+    "src/main/java/web/mvc/TypeConverter.java": [
+      "beans",
+      "convert",
+      "setBeans",
+      "TypeConverter"
+    ],
+    "src/main/java/web/mvc/annotation/RequestMethod.java": [
+      "getValue",
+      "RequestMethod"
+    ],
+    "src/main/java/web/mvc/annotation/method/DeleteMapping.java": [],
+    "src/main/java/web/mvc/annotation/method/GetMapping.java": [],
+    "src/main/java/web/mvc/annotation/method/PostMapping.java": [],
+    "src/main/java/web/mvc/annotation/method/PutMapping.java": [],
+    "src/main/java/web/mvc/annotation/parameter/PathVariable.java": [],
+    "src/main/java/web/mvc/annotation/parameter/RequestBody.java": [],
+    "src/main/java/web/mvc/annotation/parameter/RequestParam.java": [],
+    "src/main/java/web/mvc/annotation/type/RequestMapping.java": [],
+    "src/main/java/web/mvc/exception/BadRequestException.java": [
+      "BadRequestException",
+      "BadRequestException",
+      "BadRequestException"
+    ],
+    "src/main/java/web/mvc/exception/NotFoundException.java": [
+      "NotFoundException",
+      "NotFoundException"
+    ],
+    "src/main/java/web/orm/EntityMetaData.java": [
+      "EntityMetaData",
+      "EntityMetaData",
+      "parse",
+      "EntityMetaData"
+    ],
+    "src/main/java/web/orm/SqlGenerate.java": [
+      "insertSql",
+      "querySql",
+      "updateSql",
+      "deleteSql",
+      "getJdbcInformation",
+      "SqlGenerate"
+    ],
+    "src/main/java/web/orm/TypeConverter.java": [
+      "beans",
+      "convert",
+      "setBeans",
+      "TypeConverter"
+    ],
+    "src/main/java/web/orm/annotation/Column.java": [],
+    "src/main/java/web/orm/annotation/Id.java": [],
+    "src/main/java/web/orm/annotation/Table.java": [],
+    "src/main/java/web/orm/service/EntityQueryWrapper.java": [
+      "EntityQueryWrapper"
+    ],
+    "src/main/java/web/orm/service/EntityUpdateWrapper.java": [
+      "EntityUpdateWrapper"
+    ],
+    "src/main/java/web/orm/service/impl/EntityQueryWrapperImpl.java": [
+      "query",
+      "EntityQueryWrapperImpl"
+    ],
+    "src/main/java/web/orm/service/impl/EntityUpdateWrapperImpl.java": [
+      "delete",
+      "update",
+      "insert",
+      "EntityUpdateWrapperImpl"
+    ],
+    "src/main/java/web/rpc/RpcClient.java": [
+      "RpcClient",
+      "run",
+      "RpcClient"
+    ],
+    "src/main/java/web/rpc/RpcInvoke.java": [
+      "setBeans",
+      "invoke",
+      "RpcInvoke"
+    ],
+    "src/main/java/web/rpc/RpcServer.java": [
+      "RpcServer",
+      "run",
+      "RpcServer"
+    ],
+    "src/main/java/web/rpc/ServiceRegistry.java": [
+      "services",
+      "ServiceRegistry",
+      "ServiceRegistry",
+      "ServiceRegistry"
+    ],
+    "src/main/java/web/rpc/cglib/RpcProxy.java": [
+      "create",
+      "create",
+      "RpcProxy"
+    ],
+    "src/main/java/web/rpc/exception/RpcUnFoundException.java": [
+      "RpcUnFoundException",
+      "RpcUnFoundException"
+    ],
+    "src/main/java/web/rpc/handle/MyClientHandle.java": [
+      "MyClientHandle",
+      "channelActive",
+      "channelRead",
+      "exceptionCaught",
+      "MyClientHandle"
+    ],
+    "src/main/java/web/rpc/handle/MyServerHandle.java": [
+      "channelRead",
+      "MyServerHandle"
+    ],
+    "src/main/java/web/rpc/request/RpcRequest.java": [
+      "RpcRequest",
+      "getInterfaceName",
+      "getMethodName",
+      "getParameterTypes",
+      "getArguments",
+      "RpcRequest"
+    ],
+    "src/main/java/web/rpc/request/codec/RpcRequestDecoder.java": [
+      "RpcRequestDecoder"
+    ],
+    "src/main/java/web/rpc/request/codec/RpcRequestEncoder.java": [
+      "RpcRequestEncoder"
+    ],
+    "src/main/java/web/rpc/responce/RpcResponce.java": [
+      "RpcResponce",
+      "getSuccess",
+      "getData",
+      "getErrorMessage",
+      "RpcResponce"
+    ],
+    "src/main/java/web/rpc/responce/codec/RpcResponceDecode.java": [
+      "RpcResponceDecode"
+    ],
+    "src/main/java/web/rpc/responce/codec/RpcResponceEncode.java": [
+      "RpcResponceEncode"
+    ],
+    "src/main/java/web/server/HttpRequestHandler.java": [
+      "HttpRequestHandler",
+      "channelReadComplete",
+      "exceptionCaught",
+      "HttpRequestHandler"
+    ],
+    "src/main/java/web/server/HttpServer.java": [
+      "HttpServer",
+      "start",
+      "HttpServer"
+    ],
+    "src/main/java/web/server/HttpServerInitializer.java": [
+      "HttpServerInitializer",
+      "HttpServerInitializer"
+    ],
+    "src/main/java/web/server/WebResponse.java": [
+      "ok",
+      "WebResponse"
+    ],
+    "src/test/java/web/ServerTest.java": [
+      "classScanTest",
+      "ServerTest"
+    ],
+    "witch -c recover-ioc": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "src/main/java/web/aop/AopProxy.java",
+          "language": "java",
+          "sizeLines": 82,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "language": "java",
+          "sizeLines": 159,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "language": "java",
+          "sizeLines": 113,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/main/java/web/aop/AopProxy.java": [
+          "src/main/java/web/aop/annotation/method/After.java",
+          "src/main/java/web/aop/annotation/method/Around.java",
+          "src/main/java/web/aop/annotation/method/Before.java"
+        ],
+        "src/main/java/web/ioc/factory/DefaultBeanFactory.java": [
+          "src/main/java/web/aop/AopProxy.java",
+          "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+          "src/main/java/web/ioc/exception/NoSuchBeanException.java",
+          "src/main/java/web/ioc/exception/NoUniqueBeanException.java",
+          "src/main/java/web/ioc/pojo/BeanDefinition.java",
+          "src/main/java/web/ioc/registry/SingletonBeanRegistry.java"
+        ],
+        "src/main/java/web/ioc/reader/BeanDefinitionReader.java": [
+          "src/main/java/web/aop/AspectRegistry.java",
+          "src/main/java/web/aop/PointcutMatcher.java",
+          "src/main/java/web/aop/annotation/method/After.java",
+          "src/main/java/web/aop/annotation/method/Around.java",
+          "src/main/java/web/aop/annotation/method/Before.java",
+          "src/main/java/web/aop/annotation/type/Aspect.java",
+          "src/main/java/web/ioc/annotation/Fileld/Scope.java",
+          "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+          "src/main/java/web/ioc/pojo/BeanDefinition.java",
+          "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java"
+        ]
+      },
+      "neighborMap": {
+        "src/main/java/web/aop/AopProxy.java": [
+          {
+            "path": "src/main/java/web/aop/annotation/method/After.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "src/main/java/web/aop/annotation/method/Around.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "src/main/java/web/aop/annotation/method/Before.java",
+            "batchIndex": 1,
+            "symbols": []
+          }
+        ],
+        "src/main/java/web/ioc/factory/DefaultBeanFactory.java": [
+          {
+            "path": "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+            "batchIndex": 1,
+            "symbols": [
+              "ScopeEnum"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/exception/NoSuchBeanException.java",
+            "batchIndex": 1,
+            "symbols": [
+              "NoSuchBeanException",
+              "NoSuchBeanException"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/exception/NoUniqueBeanException.java",
+            "batchIndex": 1,
+            "symbols": [
+              "NoUniqueBeanException",
+              "NoUniqueBeanException"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/pojo/BeanDefinition.java",
+            "batchIndex": 1,
+            "symbols": [
+              "BeanDefinition"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/registry/SingletonBeanRegistry.java",
+            "batchIndex": 1,
+            "symbols": [
+              "SingletonBeanRegistry",
+              "SingletonBeanRegistry",
+              "getSingletonBeans",
+              "addSingletonBeans",
+              "SingletonBeanRegistry"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+            "batchIndex": 6,
+            "symbols": [
+              "AnnotationConfigApplicationContext",
+              "getBeans",
+              "AnnotationConfigApplicationContext"
+            ]
+          }
+        ],
+        "src/main/java/web/ioc/reader/BeanDefinitionReader.java": [
+          {
+            "path": "src/main/java/web/aop/AspectRegistry.java",
+            "batchIndex": 6,
+            "symbols": [
+              "AspectRegistry",
+              "AspectRegistry"
+            ]
+          },
+          {
+            "path": "src/main/java/web/aop/PointcutMatcher.java",
+            "batchIndex": 1,
+            "symbols": [
+              "matches",
+              "PointcutMatcher"
+            ]
+          },
+          {
+            "path": "src/main/java/web/aop/annotation/method/After.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "src/main/java/web/aop/annotation/method/Around.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "src/main/java/web/aop/annotation/method/Before.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "src/main/java/web/aop/annotation/type/Aspect.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "src/main/java/web/ioc/annotation/Fileld/Scope.java",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "src/main/java/web/ioc/enumeration/ScopeEnum.java",
+            "batchIndex": 1,
+            "symbols": [
+              "ScopeEnum"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/pojo/BeanDefinition.java",
+            "batchIndex": 1,
+            "symbols": [
+              "BeanDefinition"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java",
+            "batchIndex": 1,
+            "symbols": [
+              "BeanDefinitionRegistry",
+              "BeanDefinitionRegistry",
+              "getBeanDefinitions",
+              "BeanDefinitionRegistry"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+            "batchIndex": 6,
+            "symbols": [
+              "AnnotationConfigApplicationContext",
+              "getBeans",
+              "AnnotationConfigApplicationContext"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "src/main/java/web/ApplicationServer.java",
+          "language": "java",
+          "sizeLines": 28,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/main/java/web/ApplicationServer.java": [
+          "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "src/main/java/web/mvc/Dispatcher.java",
+          "src/main/java/web/mvc/HandleMapping.java",
+          "src/main/java/web/mvc/TypeConverter.java",
+          "src/main/java/web/server/HttpServer.java"
+        ]
+      },
+      "neighborMap": {
+        "src/main/java/web/ApplicationServer.java": [
+          {
+            "path": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+            "batchIndex": 6,
+            "symbols": [
+              "AnnotationConfigApplicationContext",
+              "getBeans",
+              "AnnotationConfigApplicationContext"
+            ]
+          },
+          {
+            "path": "src/main/java/web/mvc/Dispatcher.java",
+            "batchIndex": 4,
+            "symbols": [
+              "Dispatcher",
+              "dispatch",
+              "Dispatcher"
+            ]
+          },
+          {
+            "path": "src/main/java/web/mvc/HandleMapping.java",
+            "batchIndex": 2,
+            "symbols": [
+              "register",
+              "get",
+              "methodOf",
+              "HandleMapping"
+            ]
+          },
+          {
+            "path": "src/main/java/web/mvc/TypeConverter.java",
+            "batchIndex": 4,
+            "symbols": [
+              "beans",
+              "convert",
+              "setBeans",
+              "TypeConverter"
+            ]
+          },
+          {
+            "path": "src/main/java/web/server/HttpServer.java",
+            "batchIndex": 4,
+            "symbols": [
+              "HttpServer",
+              "start",
+              "HttpServer"
+            ]
+          },
+          {
+            "path": "src/main/java/test/MiniSpringboot.java",
+            "batchIndex": 4,
+            "symbols": [
+              "main",
+              "MiniSpringboot"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 6,
+      "files": [
+        {
+          "path": "src/main/java/web/aop/AspectRegistry.java",
+          "language": "java",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+          "language": "java",
+          "sizeLines": 90,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/main/java/web/aop/AspectRegistry.java": [],
+        "src/main/java/web/ioc/AnnotationConfigApplicationContext.java": [
+          "src/main/java/web/aop/AspectRegistry.java",
+          "src/main/java/web/core/ClassScanner.java",
+          "src/main/java/web/ioc/annotation/Fileld/Autowired.java",
+          "src/main/java/web/ioc/factory/BeanFactory.java",
+          "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+          "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+          "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java",
+          "src/main/java/web/rpc/RpcInvoke.java",
+          "src/main/java/web/rpc/ServiceRegistry.java"
+        ]
+      },
+      "neighborMap": {
+        "src/main/java/web/aop/AspectRegistry.java": [
+          {
+            "path": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+            "batchIndex": 1,
+            "symbols": [
+              "BeanDefinitionReader",
+              "parseClass",
+              "parseForAspect",
+              "BeanDefinitionReader"
+            ]
+          }
+        ],
+        "src/main/java/web/ioc/AnnotationConfigApplicationContext.java": [
+          {
+            "path": "src/main/java/web/core/ClassScanner.java",
+            "batchIndex": 6,
+            "symbols": [
+              "scan",
+              "scanDir",
+              "ClassScanner"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/annotation/Fileld/Autowired.java",
+            "batchIndex": 6,
+            "symbols": []
+          },
+          {
+            "path": "src/main/java/web/ioc/factory/BeanFactory.java",
+            "batchIndex": 6,
+            "symbols": [
+              "BeanFactory"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+            "batchIndex": 1,
+            "symbols": [
+              "DefaultBeanFactory",
+              "getBean",
+              "getBean",
+              "getBean",
+              "getBeans",
+              "containsBean",
+              "isSingleton",
+              "isPrototype",
+              "DefaultBeanFactory"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+            "batchIndex": 1,
+            "symbols": [
+              "BeanDefinitionReader",
+              "parseClass",
+              "parseForAspect",
+              "BeanDefinitionReader"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ioc/registry/BeanDefinitionRegistry.java",
+            "batchIndex": 1,
+            "symbols": [
+              "BeanDefinitionRegistry",
+              "BeanDefinitionRegistry",
+              "getBeanDefinitions",
+              "BeanDefinitionRegistry"
+            ]
+          },
+          {
+            "path": "src/main/java/web/rpc/RpcInvoke.java",
+            "batchIndex": 3,
+            "symbols": [
+              "setBeans",
+              "invoke",
+              "RpcInvoke"
+            ]
+          },
+          {
+            "path": "src/main/java/web/rpc/ServiceRegistry.java",
+            "batchIndex": 6,
+            "symbols": [
+              "services",
+              "ServiceRegistry",
+              "ServiceRegistry",
+              "ServiceRegistry"
+            ]
+          },
+          {
+            "path": "src/main/java/web/ApplicationServer.java",
+            "batchIndex": 4,
+            "symbols": [
+              "run",
+              "ApplicationServer"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 8,
+      "files": [
+        {
+          "path": "src/main/java/web/aop/Proceeding.java",
+          "language": "java",
+          "sizeLines": 5,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/main/java/web/aop/ProceedingJoinPoint.java",
+          "language": "java",
+          "sizeLines": 23,
+          "fileCategory": "code"
+        },
+        {
+          "path": "witch -c recover-ioc",
+          "language": "unknown",
+          "sizeLines": 95,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/main/java/web/aop/Proceeding.java": [],
+        "src/main/java/web/aop/ProceedingJoinPoint.java": [],
+        "witch -c recover-ioc": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

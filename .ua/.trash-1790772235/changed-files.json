@@ -1,0 +1,11 @@
+[
+  "src/main/java/web/ApplicationServer.java",
+  "src/main/java/web/aop/AopProxy.java",
+  "src/main/java/web/aop/AspectRegistry.java",
+  "src/main/java/web/aop/Proceeding.java",
+  "src/main/java/web/aop/ProceedingJoinPoint.java",
+  "src/main/java/web/ioc/AnnotationConfigApplicationContext.java",
+  "src/main/java/web/ioc/factory/DefaultBeanFactory.java",
+  "src/main/java/web/ioc/reader/BeanDefinitionReader.java",
+  "witch -c recover-ioc"
+]
