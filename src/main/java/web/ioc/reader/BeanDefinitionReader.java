@@ -8,7 +8,6 @@ import web.aop.annotation.method.Before;
 import web.aop.annotation.type.Aspect;
 import web.aop.PointcutMatcher;
 import web.ioc.annotation.Fileld.Scope;
-import web.exception.ioc.annotation.Type.*;
 import web.ioc.annotation.Type.*;
 import web.ioc.enumeration.ScopeEnum;
 import web.ioc.pojo.BeanDefinition;
@@ -82,12 +81,20 @@ public class BeanDefinitionReader {
                     }
                 }
             }
+            if(clazz.getSuperclass() != null){
+                clazz = clazz.getSuperclass();
+                for (Method method : clazz.getDeclaredMethods()) {
+                    method.setAccessible(true);
+                    addAspectMethodName(aspectMethodNames, method.getName());
+                }
+            }
         }
         return aspectMethodNames;
     }
 
     private boolean needProxy(Class<?> beanClass, Set<String> aspectMethodNames) {
         for (Method method : beanClass.getDeclaredMethods()) {
+            method.setAccessible(true);
             for (String expression : aspectMethodNames) {
                 if (PointcutMatcher.matches(expression, beanClass, method)) {
                     return true;

@@ -3,8 +3,10 @@ package web.aop;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import web.aop.annotation.method.After;
+import web.aop.annotation.method.Around;
 import web.aop.annotation.method.Before;
 import java.lang.reflect.Method;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -32,24 +34,46 @@ public class AopProxy {
          * cglib会拦截所有的方法，但是具体需要执行aop的方法由拦截器自己判断
          */
         enhancer.setCallback((MethodInterceptor)(obj, method, args, proxy)->{
+            List<Object[]> aroundAdvices = new LinkedList<>();
 //            目标方法执行之前先遍历看看有没有@Before，有的话就执行前置逻辑
             for(Object aspect : aspects) {
                 for(Method ignored :aspect.getClass().getDeclaredMethods()){
-                    if(ignored.isAnnotationPresent(Before.class) && ignored.getAnnotation(Before.class).value().equals(method.getName())){
+                    ignored.setAccessible(true);
+                    if(ignored.isAnnotationPresent(Before.class) && PointcutMatcher.matches(ignored.getAnnotation(Before.class).value(),target.getClass(),method)){
                         ignored.invoke(aspect);
+                    }
+                    if(ignored.isAnnotationPresent(Around.class) && PointcutMatcher.matches(ignored.getAnnotation(Around.class).value(),target.getClass(),method)){
+                       aroundAdvices.add(new Object[]{aspect,ignored});
                     }
                 }
             }
-            //不能用 method.invoke(obj, args),否则会再次触发代理导致无限递归，invokeSuper就是绕过代理直接使用父类的真实方法
-            Object result = proxy.invokeSuper(obj, args);
-            for(Object aspect : aspects) {
-                for(Method ignored :aspect.getClass().getDeclaredMethods()){
-                    if(ignored.isAnnotationPresent(After.class) && ignored.getAnnotation(After.class).value().equals(method.getName())){
-                        ignored.invoke(aspect);
-                    }
-                }
+            Proceeding chain = ()->{
+                //不能用 method.invoke(obj, args),否则会再次触发代理导致无限递归，invokeSuper就是绕过代理直接使用父类的真实方法
+                return proxy.invokeSuper(obj, args);
+            };
+//            around方法的链式调用
+            for (int i = aroundAdvices.size() -1; i >=0 ; i--) {
+                Object aspect = aroundAdvices.get(i)[0];
+                Method aspectMethod =(Method) aroundAdvices.get(i)[1];
+                Proceeding next = chain;
+                chain = ()->{
+                    ProceedingJoinPoint point = new ProceedingJoinPoint(method, args, next);
+                    return aspectMethod.invoke(aspect, point);
+                };
             }
-            return result;
+            try{
+               return chain.proceed();
+           }finally {
+               for (Object aspect : aspects) {
+                   for (Method ignored : aspect.getClass().getDeclaredMethods()) {
+                       ignored.setAccessible(true);
+                       if (ignored.isAnnotationPresent(After.class) && PointcutMatcher.matches(ignored.getAnnotation(After.class).value(),target.getClass(),method)) {
+                           ignored.invoke(aspect);
+                       }
+                   }
+               }
+           }
+
         });  //参数是拦截器，用于子类方法被调用时，执行什么逻辑
 
         return enhancer.create();   //真正生成子类实例

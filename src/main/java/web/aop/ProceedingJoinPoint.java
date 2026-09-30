@@ -1,26 +1,23 @@
 package web.aop;
 
 import lombok.Getter;
-import net.sf.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 
 public class ProceedingJoinPoint {
-    private Object target;
     @Getter
-    private Method method;
+    private final Method method;
     @Getter
-    private Object[] args;
-    private MethodProxy methodProxy;
+    private final Object[] args;
+    private final Proceeding next;
 
-    public ProceedingJoinPoint(Object target, Method method, Object[] args, MethodProxy methodProxy) {
-        this.target = target;
+    public ProceedingJoinPoint(Method method, Object[] args, Proceeding next) {
         this.method = method;
         this.args = args;
-        this.methodProxy = methodProxy;
+        this.next = next;
     }
     public Object proceed() throws Throwable {
-        return methodProxy.invokeSuper(target, args);
+        return next.proceed();
     }
 
 }

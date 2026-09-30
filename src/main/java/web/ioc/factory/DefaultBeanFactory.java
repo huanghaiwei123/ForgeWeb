@@ -18,7 +18,7 @@ public class DefaultBeanFactory implements BeanFactory {
 
     private Map<String,Object> singletonBeans = new LinkedHashMap<>();
 
-    private List<BeanDefinition> beanDefinitions = new ArrayList<>();
+    private Map<Object,BeanDefinition> beanWithDefinition = new LinkedHashMap<>();
 
     private List<Object> aspects;
 
@@ -27,8 +27,8 @@ public class DefaultBeanFactory implements BeanFactory {
 
     private ObjectMapper om = new ObjectMapper();
 
-    public DefaultBeanFactory(List<BeanDefinition> definitions)  {
-        this.beanDefinitions.addAll(definitions);
+    public DefaultBeanFactory(List<BeanDefinition> definitions,List<Object> aspects)  {
+        this.aspects = aspects;
         for (BeanDefinition definition : definitions) {
             String beanName = definition.getBeanName();
             Class<?> aClass = definition.getBeanClass();
@@ -45,6 +45,7 @@ public class DefaultBeanFactory implements BeanFactory {
                    singletonBeans.put(beanName, bean);
                }
                beans.put(beanName,bean);
+               beanWithDefinition.put(bean,definition);
             } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | NoSuchMethodException |
                      InvocationTargetException e) {
                 throw new RuntimeException(e);
@@ -53,9 +54,6 @@ public class DefaultBeanFactory implements BeanFactory {
         singletonBeanRegistry = new SingletonBeanRegistry(singletonBeans);
     }
 
-    public void setAspect(List<Object> aspects) {
-        this. aspects = aspects;
-    }
 
     /**
      * 非单例对象重新创建
@@ -68,6 +66,8 @@ public class DefaultBeanFactory implements BeanFactory {
         if (bean == null) {
             throw new NoSuchBeanException(beanName);
         }
+        BeanDefinition definition = beanWithDefinition.get(bean);
+        Boolean isNeedProxy = definition.getIsNeedProxy();
         if(isPrototype(beanName)) {
             try {
                 bean = bean.getClass().getDeclaredConstructor().newInstance();
@@ -76,16 +76,26 @@ public class DefaultBeanFactory implements BeanFactory {
                 throw new RuntimeException(e);
             }
         }
-        return bean;
+        if (isNeedProxy) {
+            return new AopProxy(aspects).createProxy(bean);
+        }else{
+            return bean;
+        }
     }
 
     @Override
     public <T> Object getBean(String beanName, Class<T> requiredType) {
-        Object bean = beans.get(beanName);
-        if (bean != null && requiredType.isAssignableFrom(bean.getClass())) {
+        Object bean = null;
+        if(getBean(beanName) == getBean(requiredType)) {
+            bean = getBean(beanName);
+        }
+        BeanDefinition definition = beanWithDefinition.get(bean);
+        Boolean isNeedProxy = definition.getIsNeedProxy();
+        if (isNeedProxy) {
+            return new AopProxy(aspects).createProxy(bean);
+        }else{
             return bean;
         }
-       return getBean(beanName);
     }
 
     @Override
@@ -103,7 +113,21 @@ public class DefaultBeanFactory implements BeanFactory {
             throw new NoUniqueBeanException(requiredType.getName());
         }
         Object bean = beans.get(0);
-        return isSingleton(requiredType.getName()) ? (T) bean : (T)getBean(requiredType.getName());
+        if(isPrototype(requiredType.getName())){
+            try {
+                bean = requiredType.getDeclaredConstructor().newInstance();
+            } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
+                     NoSuchMethodException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        BeanDefinition definition = beanWithDefinition.get(bean);
+        Boolean isNeedProxy = definition.getIsNeedProxy();
+        if (isNeedProxy) {
+            return new AopProxy(aspects).createProxy(bean);
+        }else{
+            return bean;
+        }
     }
 
     @Override

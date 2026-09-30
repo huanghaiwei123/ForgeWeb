@@ -32,7 +32,7 @@ public class AnnotationConfigApplicationContext{
 
 
     private Map<String,Object> getBeans(List<Class<?>> scan) {
-        BeanFactory beanFactory = getBeanFactory(scan);
+        beanFactory = getBeanFactory(scan);
         return beanFactory.getBeans();
     }
 
@@ -40,8 +40,7 @@ public class AnnotationConfigApplicationContext{
         BeanDefinitionReader reader = new BeanDefinitionReader();
         BeanDefinitionRegistry registry = reader.parseClass(scan);
         AspectRegistry aspectRegistry = reader.parseForAspect(scan);
-        BeanFactory beanFactory = new DefaultBeanFactory(registry.getBeanDefinitions());
-        beanFactory.setAspect(aspectRegistry.getAspects());
+        beanFactory = new DefaultBeanFactory(registry.getBeanDefinitions(),aspectRegistry.getAspects());
         return beanFactory;
     }
 
@@ -86,9 +85,6 @@ public class AnnotationConfigApplicationContext{
      * @return
      */
     private Object getFieldDependence(Class<?> type) {
-        if(beanFactory==null) {
-            beanFactory = getBeanFactory(scan);
-        }
         return beanFactory.getBean(type);
     }
 }

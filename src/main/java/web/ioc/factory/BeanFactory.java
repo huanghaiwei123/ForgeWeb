@@ -36,7 +36,6 @@ public interface BeanFactory {
     <T> Object getBean(String beanName, Class<T> requiredType);
     <T> Object getBean(Class<T> requiredType);
     Map<String,Object> getBeans();
-    void setAspect(List<Object> aspects);
     boolean containsBean(String beanName);
     boolean isSingleton(String beanName);
     boolean isPrototype(String beanName);
